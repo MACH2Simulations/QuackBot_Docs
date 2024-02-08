@@ -30,7 +30,10 @@ themeVariant = [
 	{ identifier = "red"            },
 	{ identifier = "ZenRed"}
 ]
+themeVariantAuto = [ "ZenRed", "zen-light" ]
 
+
+  
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
