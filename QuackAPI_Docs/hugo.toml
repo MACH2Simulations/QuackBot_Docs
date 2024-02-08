@@ -27,7 +27,8 @@ themeVariant = [
 	{ identifier = "learn"          },
 	{ identifier = "blue"           },
 	{ identifier = "green"          },
-	{ identifier = "red"            }
+	{ identifier = "red"            },
+	{ identifier = "ZenRed"}
 ]
 
 
