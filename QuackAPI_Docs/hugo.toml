@@ -16,6 +16,7 @@ author.name = "MACHY Of MACH 2 Simulations"
 description = "Documentation for the QuackBot API & Machys useful scripts"
 
 themeVariant = [
+	{ identifier = "ZenRed"},
 	{ identifier = "relearn-auto",  name = "Relearn Light/Dark", auto = [] },
 	{ identifier = "relearn-light"  },
 	{ identifier = "relearn-dark"   },
@@ -27,8 +28,8 @@ themeVariant = [
 	{ identifier = "learn"          },
 	{ identifier = "blue"           },
 	{ identifier = "green"          },
-	{ identifier = "red"            },
-	{ identifier = "ZenRed"}
+	{ identifier = "red"            }
+	
 ]
 themeVariantAuto = [ "ZenRed", "zen-light" ]
 
