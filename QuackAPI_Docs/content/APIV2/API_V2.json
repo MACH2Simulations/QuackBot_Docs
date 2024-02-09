@@ -15,7 +15,7 @@
   },
   "servers" : [ {
     "url" : "https://api.m2s.bz/api/",
-    "description" : "New Server 2"
+    "description" : "API V2"
   } ],
   "tags" : [ {
     "name" : "V2 Active",
