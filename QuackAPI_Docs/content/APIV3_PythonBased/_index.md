@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
-title = "APIV3_PythonBased"
+title = "API V3 (Python)"
 weight = 1
 +++
 
-Lorem Ipsum.
+{{< openapi src="/../../apiv3_pythonbased/PythonAPI.json" >}}

@@ -1,7 +1,6 @@
 +++
 archetype = "home"
 title = "QuackBot API"
-weight = 1
 +++
 
 The QuackBot API Is a Twitch and Youtube integration tool allowing you to Read and Write messages to discord, post go live notifications, clip in chat (Twitch only), Translate text and more.
