@@ -8,8 +8,6 @@
   "servers" : [ {
     "url" : "https://virtserver.swaggerhub.com/MACH2Simulations/QuackBotAPI_PY1/1.0.0",
     "description" : "SwaggerHub API Auto Mocking"
-  }, {
-    "url" : "/"
   } ],
   "tags" : [ {
     "name" : "Dormant",
