@@ -29,22 +29,18 @@ Once had a printer that asked for toner, when it was low (25%) on toner, but had
 
 I have yet to have a ticket marked "Urgent" that was.
 
-"Script doesn't work", yes it does, you just gave it bad data. 
+"Script doesn't work", yes it does, you just gave it bad data.  
+
+Dear Developers, for the love of all that's holy, give me a proper error message.
 
 ***RTFM***
 
 ---
 
-## 8 AM Server updates  
-
-[When WSUS Goes Wrong](../../whoops/8amserver/), a story of servers updating at 8AM Monday Morning.
-
-### USB File Server Deletion  (Wombel)  
-
+[When WSUS Goes Wrong](../../whoops/8amserver/), a story of servers updating at 8AM Monday Morning.  
 [NO Backups, No Files](../../whoops/usbserver/) A Story of a USB Stick, and a server being deleted.  
 
-
-Stories TODO
+### Stories TODO
 
 Chokeing the HeadOA
 
