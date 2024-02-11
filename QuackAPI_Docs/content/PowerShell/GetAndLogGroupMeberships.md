@@ -1,7 +1,7 @@
 +++
 title = 'Log AD Group Memberships'
 date = 2024-02-08T20:04:15Z
-weight = 3
+weight = 4
 +++
 
 This script will create a text file containing group memberships, for each member of the OU Specified in the search base.  
@@ -15,7 +15,7 @@ Make sure you set the [Search Base](/../../PowerShell/#SearchBase) otherwise it 
 
 ## The Script itself  
 
-[GetandLogGroupMemberships.ps1](/GetandLogGroupMeberships.ps1)  
+[GetandLogGroupMemberships.ps1](../../Scripts/GetandLogGroupMeberships.ps1)  
 
 ```powershell
 $Users = Get-ADUser -SearchBase "OU=YOUROUHERE,DC=DOMAIN,DC=TLD" -Filter * | select -ExpandProperty SamAccountName ##This gets all the users in a specifed OU

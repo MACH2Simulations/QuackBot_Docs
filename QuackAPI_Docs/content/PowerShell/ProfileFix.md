@@ -1,16 +1,18 @@
 +++
 title = 'Profile Yeeter'
 date = 2024-02-08T20:04:15Z
-weight = 5
+weight = 6
 +++
 
 This script will remove local profiles on a computer and then restarts it.  
 
 With a list of Users that can be excluded.  
 
+***This needs to be run as an admin.***
+
 ## The Script itself  
 
-[ProfileFix.ps1](../../PowerShell/ProfileFix.ps1)  
+[ProfileFix.ps1](../../PowerShell/Scripts/ProfileFix.ps1)  
 
 ```powershell
 $LoggedInUsers =  (Get-WMIObject -ClassName Win32_ComputerSystem).Username.substring(4) 

@@ -1,7 +1,7 @@
 +++
 title = 'Colour Ping'
 date = 2024-02-08T20:04:15Z
-weight = 2
+weight = 3
 +++
 
 This script will ping an IP Address until told to stop, giving you a colour coded output depending on the set latency values.  

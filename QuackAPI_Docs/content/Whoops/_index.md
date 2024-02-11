@@ -1,0 +1,51 @@
++++
+archetype = "chapter"
+title = "Botches and Bodges"
+weight = 1
++++
+
+***Some stories of things going wrong, and the bodges that should never be talked about.***  
+
+>Most of this is going to cover my time as an IT Technician in a school..  
+>
+>A Mixture of working as a All around tech in one of the best schools in the county (T1 on paper but I Basically did everything from changing toner to VLans)  
+>
+>Then back to being a T1 Tech, this time in on of the biggest MATs in the country.  
+> If you see some really really odd spelling like "wea pon ized" its to try to be nice to filters.  
+
+This page will contain short 1/2 Liners/Tidbits that aren't big enough for there own page, and the contents of the other stories.
+
+### Wombel 
+There maybe some stories about a Co Worker I will call ***"Womble"***, they joined with basically 0 technical skills, which in itself isn't a problem, but even after several years of training from me, 2 actual teachers and another technical person, they could still be ran around by a 6 month IT Apprentice.  
+I Think wea pon ized incompetence was a huge factor 
+
+## Tidbits and Anecdote
+
+Many a time  I have Used a Server / Desktop as a stool or a step, have yet to break anything important.  
+
+Once had a printer that asked for toner, when it was low (25%) on toner, but had ran out of paper. "No it wants paper, its lying"
+
+"No Bloody Clue", is better response to 95% of users than lying.
+
+I have yet to have a ticket marked "Urgent" that was.
+
+"Script doesn't work", yes it does, you just gave it bad data. 
+
+***RTFM***
+
+---
+
+## 8 AM Server updates  
+
+[When WSUS Goes Wrong](../../whoops/8amserver/), a story of servers updating at 8AM Monday Morning.
+
+### USB File Server Deletion  (Wombel)  
+
+[NO Backups, No Files](../../whoops/usbserver/) A Story of a USB Stick, and a server being deleted.  
+
+
+Stories TODO
+
+Chokeing the HeadOA
+
+script goes beep
