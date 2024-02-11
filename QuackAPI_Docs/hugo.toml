@@ -41,6 +41,8 @@ themeVariantAuto = [ "ZenRed", "zen-light" ]
 # General
 # These options are defining general, non visual behavior.
 
+enableRobotsTXT = true
+
 # Avoid new asset URLs on build.
 # Default: false
 # By default JavaScript-files and CSS-files get a unique ID on each rebuild.

@@ -11,5 +11,3 @@ This also contains the documentation for My PowerShell Scripts
 
 Welcome to MACHS Scripts.  
 Here you will find a collection of scripts, mostly PowerShell, to help with Active directory management and other automation tasks.  
-
-![GitHub last commit](https://img.shields.io/github/last-commit/mach2simulations/QuackBot_Docs) 
