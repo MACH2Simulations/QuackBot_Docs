@@ -39,6 +39,7 @@ Dear Developers, for the love of all that's holy, give me a proper error message
 
 [When WSUS Goes Wrong](../../whoops/8amserver/), a story of servers updating at 8AM Monday Morning.  
 [NO Backups, No Files](../../whoops/usbserver/) A Story of a USB Stick, and a server being deleted.  
+[Playing With Matches](../../whoops/FireMuhaha/)
 
 ### Stories TODO
 
