@@ -26,4 +26,4 @@ The productions I helped with were pretty good and good evenings despite the stu
 
 ---
 
-{{< video "../../whoops/content/SmokeyBoi.mp4" "my-5" >}}
+### Video Soon as markdown is pain
