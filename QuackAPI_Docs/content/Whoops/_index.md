@@ -43,6 +43,6 @@ Dear Developers, for the love of all that's holy, give me a proper error message
 
 ### Stories TODO
 
-Chokeing the HeadOA
+Broadcast storm, core switch being fat, reimage
 
 script goes beep
