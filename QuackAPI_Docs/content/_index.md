@@ -11,3 +11,11 @@ This also contains the documentation for My PowerShell Scripts
 
 Welcome to MACHS Scripts.  
 Here you will find a collection of scripts, mostly PowerShell, to help with Active directory management and other automation tasks.  
+
+# Botches and Bodges 
+
+Some stories of things going wrong, and the bodges that should never be talked about
+
+# TechGuyBlog 
+
+I Started a blog type thing with a few tech stories, like news style, but it seems more sensible to merge it here. 

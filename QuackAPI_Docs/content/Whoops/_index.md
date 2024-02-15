@@ -16,8 +16,7 @@ weight = 1
 This page will contain short 1/2 Liners/Tidbits that aren't big enough for there own page, and the contents of the other stories.
 
 ### Wombel 
-There maybe some stories about a Co Worker I will call ***"Womble"***, they joined with basically 0 technical skills, which in itself isn't a problem, but even after several years of training from me, 2 actual teachers and another technical person, they could still be ran around by a 6 month IT Apprentice.  
-I Think wea pon ized incompetence was a huge factor 
+There maybe some stories about a Co Worker I will call ***"Womble"***, they had some very interesting ways of doing things.  
 
 ## Tidbits and Anecdote
 
@@ -27,10 +26,11 @@ Once had a printer that asked for toner, when it was low (25%) on toner, but had
 
 "No Bloody Clue", is better response to 95% of users than lying.
 
+<!--
 I have yet to have a ticket marked "Urgent" that was.
 
 "Script doesn't work", yes it does, you just gave it bad data.  
-
+-->
 Dear Developers, for the love of all that's holy, give me a proper error message.
 
 ***RTFM***
