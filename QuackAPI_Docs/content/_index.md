@@ -16,6 +16,6 @@ Here you will find a collection of scripts, mostly PowerShell, to help with Acti
 
 Some stories of things going wrong, and the bodges that should never be talked about
 
-# TechGuyBlog 
+# The Archives 
 
-I Started a blog type thing with a few tech stories, like news style, but it seems more sensible to merge it here. 
+Old Projects moved into here to close down redundant sites.

@@ -1,6 +1,6 @@
 +++
 archetype = "chapter"
-title = "Tech Guy Blog"
+title = "Tech Guy Blog (Archive)"
 weight = 6
 +++
 
