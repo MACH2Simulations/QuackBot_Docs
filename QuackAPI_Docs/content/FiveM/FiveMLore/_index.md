@@ -1,8 +1,8 @@
 +++
 archetype = "chapter"
-title = "People"
+title = "Lore"
 weight = 1
 +++
 
-The People Of The Server.  
+The Lore Of The Server.  
 
