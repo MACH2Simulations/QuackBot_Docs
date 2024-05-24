@@ -45,6 +45,11 @@ Current Project; PDSFLR, A System that can be added onto most vehicles to offer 
 
 #### Prometheus Aerospace, Land & Sea Systems – Formally SLDS , SASP, SASE, SHSS  
 
+[SLDS](/ "Slater Land Defence Services") | Slater Land Defence Services
+SASP | Slater Areospace Protection
+SASE | Slater Air & Sea Enterpises
+SHSS | Slater Heavy Ship Systems
+
 PALSS Provides armoured vehicles to the SAPD, SAFR, SACG And SAERS;  
 For the SAPD for riot control and armoured transport.  
 For SAFR & SAERS for operating in extreme danger environments such as nuclear attacks, zombie outbreaks and flooding.  

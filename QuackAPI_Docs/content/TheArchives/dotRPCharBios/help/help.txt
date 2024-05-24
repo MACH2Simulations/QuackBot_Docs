@@ -1,1 +1,0 @@
-To learn more about the city you can use the following commands !dotrp people (name) this tells you more about the people in the city! !dotrp places (name) this tells you more about the places in the city! !dotrp things (name) this tells you more about the things in the city. use !dotrp people/places/things help (!dotrp people help) for some suggestions
