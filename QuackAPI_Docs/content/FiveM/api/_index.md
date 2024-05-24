@@ -33,12 +33,9 @@ Example of a 'Things' Short Bio
 
 ### API 
 
-
 ### API Key  
 
 Contact the team for an API Key  
-
-
 
 ### Stream Chatbot Syntax  
 Please make sure "hide command from public pages" is selected where possible, to protect YOUR API Key.  
@@ -47,9 +44,27 @@ Please make sure "hide command from public pages" is selected where possible, to
 
 ```text
 ${customapi https://apiv3.m2s.bz/api/machrp?code=<APIKEY>&type=${1:1|'help'}&name=${2:2|'help'}}
+
 ```  
 
-***Nightbot***
+Timers
+
+```text
+${customapi https://apiv3.m2s.bz/api/machrp?code=<APIKEY>&type=timers&name=<TimerName>}
 ```
+
+***Nightbot***
+
+Might be broken  
+
+```text
 $(urlfetch https://apiv3.m2s.bz/api/machrp?code=<APIKEY>&name=$(2)&type=$(1))
+```
+
+***Streamlabs***  
+
+Untested Recently  
+
+```text
+{readapi.https://apiv3.m2s.bz/api/dotrp?code=Uw4wM-J0j7lPvLtOZf2h9gvjppdoZIaSLaVJHUou0onJAzFuU_6ZGA==&name={2}&type={1}}
 ```

@@ -3,7 +3,6 @@ title = "Prometheus Heavy Industries"
 +++
 {{% include "/fivem/fivemlore/places/phi_short.txt" %}}
 
-
 Located at Maze bank tower (west) on prosperity.  
 
 
@@ -45,10 +44,12 @@ Current Project; PDSFLR, A System that can be added onto most vehicles to offer 
 
 #### Prometheus Aerospace, Land & Sea Systems – Formally SLDS , SASP, SASE, SHSS  
 
-[SLDS](/ "Slater Land Defence Services") | Slater Land Defence Services
-SASP | Slater Areospace Protection
-SASE | Slater Air & Sea Enterpises
+[SLDS](/ "Slater Land Defense Services") | Slater Land Defence Services
+SASP | Slater Aerospace Protection
+SASE | Slater Air & Sea Enterprises
 SHSS | Slater Heavy Ship Systems
+
+{{< tooltip element="SLDS" title="Title in hint">}}Slater Land Defense Services.{{< /tooltip >}}
 
 PALSS Provides armoured vehicles to the SAPD, SAFR, SACG And SAERS;  
 For the SAPD for riot control and armoured transport.  

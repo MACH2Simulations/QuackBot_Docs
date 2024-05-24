@@ -1,6 +1,12 @@
 [module]
   [module.hugoVersion]
     min = "0.112.4"
+    [[module.mounts]]
+    source = "./html-hint"
+    target = "/assets/scss/html-hint"
+  [[module.mounts]]
+    source = "./hint.css"
+    target = "/assets/scss/hint.css"
 
 [mediaTypes]
   [mediaTypes."text/javascript"]
