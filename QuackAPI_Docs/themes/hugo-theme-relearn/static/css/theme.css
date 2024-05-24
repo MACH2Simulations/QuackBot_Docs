@@ -2,6 +2,7 @@
 
 @import "tags.css";
 @import "/assets/scss/html-hint";
+@import "/node_modules/html-hint";
 
 .hint--html {
     display: inline;

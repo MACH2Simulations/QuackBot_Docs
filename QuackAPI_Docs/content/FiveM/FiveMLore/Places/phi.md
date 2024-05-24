@@ -49,7 +49,6 @@ SASP | Slater Aerospace Protection
 SASE | Slater Air & Sea Enterprises
 SHSS | Slater Heavy Ship Systems
 
-{{< tooltip element="SLDS" title="Title in hint">}}Slater Land Defense Services.{{< /tooltip >}}
 
 PALSS Provides armoured vehicles to the SAPD, SAFR, SACG And SAERS;  
 For the SAPD for riot control and armoured transport.  
