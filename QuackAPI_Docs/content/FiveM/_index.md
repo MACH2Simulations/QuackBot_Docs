@@ -1,9 +1,13 @@
 +++
 archetype = "chapter"
-title = "FiveM Scrips Docs And Versions"
+title = "FiveM Scripts Docs And Versions"
 weight = 1
 +++
 
-***Some stories of things going wrong, and the bodges that should never be talked about.***  
+***New FiveM Stuff.***  
 
-Machs Hunting V 0.0.5
+Machs Hunting | **{{% include "/fivem/machshunting.txt" %}}**
+
+MachsBD | **{{% include "/fivem/machsbd.txt" %}}**
+
+Machs Functions | **{{% include "/fivem/machsfunct.txt" %}}**
