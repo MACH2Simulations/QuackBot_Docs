@@ -33,6 +33,7 @@ Example of a 'Things' Short Bio
 
 ### API 
 
+
 ### API Key  
 
 Contact the team for an API Key  
@@ -46,7 +47,6 @@ Please make sure "hide command from public pages" is selected where possible, to
 ${customapi https://apiv3.m2s.bz/api/machrp?code=<APIKEY>&type=${1:1|'help'}&name=${2:2|'help'}}
 
 ```  
-
 Timers
 
 ```text
@@ -67,4 +67,10 @@ Untested Recently
 
 ```text
 {readapi.https://apiv3.m2s.bz/api/dotrp?code=<APIKEY>&name={2}&type={1}}
+=======
+```  
+
+***Nightbot***
+```
+$(urlfetch https://apiv3.m2s.bz/api/machrp?code=<APIKEY>&name=$(2)&type=$(1))
 ```
