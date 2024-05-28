@@ -1,0 +1,320 @@
+@import './node_modules/hint.css/src/hint.scss'
+
+/**
+ * based on hint.css with html content support
+ */
+
+$custom-hint-hover-helper-size: 12px
+
+//remove default hint
+.hint--html
+  &.hint
+    &:after
+      display: none
+      opacity: 0
+
+.hint__content
+  background: $hintDefaultColor
+  color: white
+  padding: 8px 10px
+  font-size: 12px
+  line-height: 12px
+  pointer-events: none
+
+.hint--hoverable
+  .hint__content
+    pointer-events: auto
+
+.hint--html
+  position: relative
+  display: inline-block
+
+  &:before, &:after
+    position: absolute
+
+    // HACK: Trigger hardware accelerated rendering, otherwise transform was not
+    // working on a hidden element
+    @include vendor('transform', translate3d(0, 0, 0))
+
+    // HACK: visibility is set to hidden because IE & Opera don't support
+    // pointer-events on HTML content yet because of which hovering a hidden tooltip
+    // shows the tooltip.
+    visibility: hidden
+    opacity: 0
+    z-index: $hintZIndex
+    // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
+    pointer-events: none
+
+    @include vendor('transition', 0.3s ease)
+    @include vendor('transition-delay', $hintHideDelay)
+
+
+  &:hover:before, &:hover:after
+    visibility: visible
+    opacity: 1
+
+  &:hover:before, &:hover:after
+    // $hintShowDelay will apply as soon as element is hovered.
+    @include vendor('transition-delay', $hintShowDelay)
+
+  /**
+   * tooltip arrow
+   */
+  &:before
+    content: ''
+    position: absolute
+    background: transparent
+    border: $hintArrowBorderWidth solid transparent
+    // move z-index 1 up than :after so that it shows over box-shadow
+    z-index: $hintZIndex + 1
+
+
+.hint--html
+  .hint__content
+    position: absolute
+
+    // HACK: Trigger hardware accelerated rendering, otherwise transform was not
+    // working on a hidden element
+    @include vendor('transform', translate3d(0, 0, 0))
+
+    // HACK: visibility is set to hidden because IE & Opera don't support
+    // pointer-events on HTML content yet because of which hovering a hidden tooltip
+    // shows the tooltip.
+    visibility: hidden
+    opacity: 0
+    z-index: $hintZIndex
+    // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
+    //pointer-events: none
+
+    @include vendor('transition', 0.3s ease)
+    @include vendor('transition-delay', $hintHideDelay)
+
+
+  &:hover .hint__content,
+  &:focus .hint__content
+    visibility: visible
+    opacity: 1
+
+
+  &:hover .hint__content
+    // $hintShowDelay will apply as soon as element is hovered.
+    @include vendor('transition-delay', $hintShowDelay)
+
+  &.hint--notrans
+    &:before, &:after
+      @include vendor('transition', none)
+    .hint__content
+      @include vendor('transition', none)
+
+
+@mixin ice-set-margin($property, $transitionDirection, $xDirection:0)
+  $translateX: -50%
+  @if $xDirection == -1
+    $translateX: -100%
+  @elseif $xDirection == 1
+    $translateX: 0
+
+  $value: unquote("#{$property}(#{$hintTransitionDistance * $transitionDirection})")
+  @if $translateX != 0
+    @include vendor('transform', translateX($translateX) $value)
+  @else
+    @include vendor('transform', $value)
+
+
+
+@mixin ice-vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0)
+  .hint__content
+    #{$propertyY}: 100%
+    left: 50%
+
+  $translateX: -50%
+  @if $xDirection == -1
+  	$translateX: -100%
+  @elseif $xDirection == 1
+  	$translateX: 0
+
+  &:before, .hint__content
+    @include vendor('transform', translateX($translateX))
+
+  &:before
+    @if $xDirection != 0
+      margin-left: -$xDirection * $hintArrowOffsetX
+  .hint__content
+    @if $xDirection != 0
+      margin-left: -2 * $xDirection * $hintArrowOffsetX
+
+  .hint__content
+    &:after //to prevent mouse out
+      content: ' '
+      position: absolute
+      @if $transitionDirection == -1
+        top: 100%
+      @else
+        top: -$custom-hint-hover-helper-size
+      left: 0
+      height: $custom-hint-hover-helper-size
+      width: 100%
+      opacity: 0
+      background-color: red
+
+  &:hover .hint__content, &:focus .hint__content
+    @include ice-set-margin('translateY', $transitionDirection, $xDirection)
+
+
+@mixin ice-horizontal-positioned-tooltip($propertyX, $transitionDirection)
+  &:before
+    // get the arrow out
+    margin-#{$propertyX}: -2 * $hintArrowBorderWidth
+    // bring back to center
+    margin-bottom: -1 * $hintArrowBorderWidth
+  .hint__content
+    // bring back to center
+    margin-bottom: -1 * floor($hintTooltipHeight / 2)
+
+  .hint__content
+    #{$propertyX}: 100%
+    bottom: 50%
+
+  .hint__content
+    &:after //to prevent mouse out
+      content: ' '
+      position: absolute
+      @if $transitionDirection == -1
+        left: 100%
+      @else
+        left: -$custom-hint-hover-helper-size
+      top: 0
+      height: 100%
+      width: $custom-hint-hover-helper-size
+      opacity: 0
+      background-color: red
+
+  &:hover .hint__content, &:focus .hint__content
+  	@include ice-set-margin('translateX', $transitionDirection, 1)
+
+
+
+/**
+ * top tooltip
+ */
+.#{$hintPrefix}top
+  @include ice-vertical-positioned-tooltip('bottom', -1)
+
+.#{$hintPrefix}top-left
+  @include ice-vertical-positioned-tooltip('bottom', -1, -1)
+
+.#{$hintPrefix}top-right
+  @include ice-vertical-positioned-tooltip('bottom', -1, 1)
+
+/**
+ * bottom tooltip
+ */
+.#{$hintPrefix}bottom
+  @include ice-vertical-positioned-tooltip('top', 1)
+
+.#{$hintPrefix}bottom-left
+  @include ice-vertical-positioned-tooltip('top', 1, -1)
+
+.#{$hintPrefix}bottom-right
+  @include ice-vertical-positioned-tooltip('top', 1, 1)
+
+
+/**
+ * right tooltip
+ */
+.#{$hintPrefix}right
+  @include ice-horizontal-positioned-tooltip('left', 1)
+
+
+/**
+ * left tooltip
+ */
+.#{$hintPrefix}left
+  @include ice-horizontal-positioned-tooltip('right', -1)
+
+
+
+@mixin hint-color($color)
+  .hint__content
+    background-color: $color
+  @include arrow-border-color($color)
+
+
+/**
+ * Error
+ */
+.#{$hintPrefix}error
+  @include hint-color($hintErrorColor)
+
+
+/**
+ * Warning
+ */
+.#{$hintPrefix}warning
+  @include hint-color($hintWarningColor)
+
+
+/**
+ * Info
+ */
+.#{$hintPrefix}info
+  @include hint-color($hintInfoColor)
+
+
+/**
+ * Success
+ */
+.#{$hintPrefix}success
+  @include hint-color($hintSuccessColor)
+
+.hint--html
+  &.#{$hintPrefix}hidden
+    &:hover
+      &:after,&:before
+        opacity: 0
+        visibility: hidden
+
+      .hint__content
+        opacity: 0
+        visibility: hidden
+
+.hint--always
+  &:after, &:before
+    opacity: 1
+    visibility: visible
+
+  .hint__content
+    opacity: 1
+    visibility: visible
+
+  &.#{$hintPrefix}top
+    .hint__content
+      @include ice-set-margin('translateY', -1, 0)
+
+  &.#{$hintPrefix}top-left
+    .hint__content
+      @include ice-set-margin('translateY', -1, -1)
+
+  &.#{$hintPrefix}top-right
+    .hint__content
+      @include ice-set-margin('translateY', -1, 1)
+
+  &.#{$hintPrefix}bottom
+    .hint__content
+      @include ice-set-margin('translateY', 1, 0)
+
+  &.#{$hintPrefix}bottom-left
+    .hint__content
+      @include ice-set-margin('translateY', 1, -1)
+
+  &.#{$hintPrefix}bottom-right
+    .hint__content
+      @include ice-set-margin('translateY', 1, 1)
+
+  &.#{$hintPrefix}left
+    .hint__content
+      @include ice-set-margin('translateX', -1, 1)
+
+  &.#{$hintPrefix}right
+    .hint__content
+      @include ice-set-margin('translateX', 1, 1)

@@ -1,6 +1,16 @@
 [module]
   [module.hugoVersion]
     min = "0.112.4"
+  [[module.import]]
+    source = "/node_modules/html-hint"
+    target = "/assets/scss/html-hint"
+  [[module.import]]
+    source = "/node_modules/hint.css"
+    target = "/assets/scss/hint.css"
+
+
+
+
 
 [mediaTypes]
   [mediaTypes."text/javascript"]
@@ -41,3 +51,7 @@
   [params.relearn.dependencies.openapi]
     name = "OpenApi"
     location = "footer"
+
+
+
+

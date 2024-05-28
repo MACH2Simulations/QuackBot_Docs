@@ -1,6 +1,59 @@
 @charset "UTF-8";
 
 @import "tags.css";
+@import "/assets/scss/html-hint";
+@import "/node_modules/html-hint";
+
+.hint--html {
+    display: inline;
+}
+
+.hint__content {
+    display: table;
+
+    padding: 1rem;
+    min-width: 30vw;
+    left: unset !important;
+    right: 50%;
+    margin-left: 0;
+    margin-right: 0;
+
+    color: var(--foreground-color);
+    background: var(--background-color);
+
+    border: 1px solid var(--foreground-color);
+
+    font-size: 1em;
+
+    & .hint--title {
+        display: block;
+
+        margin-bottom: .4em;
+
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hint__content {
+        min-width: 80vw;
+        left: unset !important;
+        right: unset;
+        transform: unset !important;
+    }
+}
+
+.hint--element {
+    display: inline;
+
+    text-decoration: underline dotted var(--dim-color);
+    font-style: italic;
+
+    cursor: pointer;
+}
+
+/*                                      */
 
 /* until browsers don't let us set length values based on dppx, we
 need a way to calculate them ourself */

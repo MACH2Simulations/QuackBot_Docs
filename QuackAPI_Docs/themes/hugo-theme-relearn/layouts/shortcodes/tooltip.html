@@ -1,0 +1,7 @@
+<span class="hint--html hint--bottom">
+  <span class="hint__element">{{- .Get "element" | safeHTML }}</span>
+  <span class="hint__content">
+      {{ with .Get "title" }}<span class="hint__title">{{- . -}}</span>{{ end }}
+      {{- .Inner | safeHTML -}}
+  </span>
+</span>{{- "" -}}
