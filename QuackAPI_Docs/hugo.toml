@@ -31,8 +31,8 @@ themeVariant = [
 	{ identifier = "learn"          },
 	{ identifier = "blue"           },
 	{ identifier = "green"          },
-	{ identifier = "red"            }
-	
+	{ identifier = "red"            },
+	{ identifier = "ZenRed"}
 ]
 themeVariantAuto = [ "ZenRed", "zen-light" ]
 
