@@ -25,7 +25,7 @@ PrinterAddV2.exe /qn /del "/s m2s-print1" "/p Office-Mono Office-Colour Receptio
 "/p \<Printer1\> \<Printer2\>" - Space Separated list of printers, should match the Queue/Share name from the print server  
 "/t 10" - Must be contained in quotes, how many times will it try to add the printer. Once is ***normally*** enough, but the default is 5. (Optional)
 
-![Print Adder V2 - A Gui With a progress bar and status info](https://docs.m2s.uk/PrintAdderV2.png)  
+![Print Adder V2 - A Gui With a progress bar and status info](../../PrintAdderV2.png)  
 
 ## Change Log  
 

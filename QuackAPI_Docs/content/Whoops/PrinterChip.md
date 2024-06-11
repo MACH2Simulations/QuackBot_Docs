@@ -35,7 +35,7 @@ They did not work at all, Computer says no, [low on cyan (X/Twit Link Contains S
 The printer was thankfully still printing with the stock toners, despite being at a lower quality. and after far far to many days of troubleshooting firmware updates etc, I had an idea.  
 Printer toners have chips on them, I don't know what they do, but printers cry without them.  
 
-![Image Of Toner](../../whoops/content/toner.png)  
+![Image Of Toner](../../Whoops/Content/toner.png)  
 Image from Alibaba of all places, as its the only one I could find close enough, no idea on the actual rights holder.  
 
 I went to the printer with a spare toner in hand and a few tools. and given its hard to make this sound exciting, I managed to carefully remove the  chip from the OEM toner and move it onto the compatible ones.  
@@ -50,4 +50,4 @@ I can't remember why we didn't return them and get them changed, but our supplie
 I Think the printer was getting revenge for me putting its grandprinter out in the rain (as a door stop) when it was being recycled.  
 It deserved it after the pain of USB>Serial>Parallel and driver mess that I needed to do to get it to work on a modern & Win 10 PC.  
 
-![Picture of an evil, but sad printer in the rain](../whoops/content/sadprinter.png)  
+![Picture of an evil, but sad printer in the rain](../../Whoops/Content/sadprinter.png)  
