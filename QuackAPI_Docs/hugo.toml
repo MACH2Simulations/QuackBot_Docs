@@ -1,4 +1,4 @@
-baseURL = 'https://docs.m2s.bz/'
+baseURL = 'https://docs.m2s.uk/'
 languageCode = 'en-gb'
 title = 'Quack Bot API Docs'
 
@@ -108,7 +108,7 @@ disableBreadcrumb = false
 # Default: false
 # If the navigation buttons are hidden, also the keyboard shortcuts are
 # disabled.
-disableNextPrev = false
+disableNextPrev = true
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -156,7 +156,7 @@ collapsibleMenu = true
 # This also causes the display of the `Clear History` entry in the lower part
 # of the menu to remove all checkmarks. The checkmarks will also been removed
 # if you regenerate your site as the ids are not stable.
-showVisitedLinks = true
+showVisitedLinks = false
 
 # Hide heading above the shortcut menu.
 # Default: false
