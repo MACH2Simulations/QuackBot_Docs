@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "API V2"
-weight = 3
+weight = 5
 +++
 
 {{< openapi src="/../../apiv3/API_V2.json" >}}

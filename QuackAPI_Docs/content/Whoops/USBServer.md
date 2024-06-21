@@ -1,13 +1,11 @@
 +++
 title = '(Wombel) USB File Server Deletion'
 date = 2024-02-11T16:58:12Z
-Weight = 5
 +++
 (nothing to do with viruses/crypto)
 
-An important precursor to this is that Wombel was responsible for the backups. We used tape backups at the time: go into server room, shove in tape, check next day on the console it was ok, weekly restore test.  There was gaps of over a month at times.  
-
-They kept "Forgetting"  
+>An important precursor to this is that Wombel was responsible for the backups. We used tape backups at the time: go into server room, shove in tape, check next day on the console it was ok, weekly restore test.  There was gaps of over a month at times.  
+>They kept "Forgetting"  
 
 And, we regularly went to ***\\\server\\F$*** to access things from the servers.  
 

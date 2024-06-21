@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Botches and Bodges"
-weight = 1
+weight = 2
 +++
 
 ***Some stories of things going wrong, and the bodges that should never be talked about.***  
@@ -12,10 +12,17 @@ weight = 1
 >
 >Then back to being a T1 Tech, this time in on of the biggest MATs in the country.  
 > If you see some really really odd spelling like "wea pon ized" its to try to be nice to filters.  
+>
+> If i say "Call", i may mean email, ticket, call, person knocking on the door etc. I am almost certainly not going to remember to say the same thing.  
 
 This page will contain short 1/2 Liners/Tidbits that aren't big enough for there own page, and the contents of the other stories.
 
-### Wombel 
+### Rambling and Context  
+
+Some of these stories need quite a bit of context / Additional info for the story to make sense, ill try to add a marker to where the story actually starts if its quite a bit of context.  
+
+### Wombel  
+
 There maybe some stories about a Co Worker I will call ***"Womble"***, they had some very interesting ways of doing things.  
 
 ## Tidbits and Anecdote
@@ -37,12 +44,13 @@ Dear Developers, for the love of all that's holy, give me a proper error message
 
 ---
 
-[When WSUS Goes Wrong](../../whoops/8amserver/), a story of servers updating at 8AM Monday Morning.  
-[NO Backups, No Files](../../whoops/usbserver/) A Story of a USB Stick, and a server being deleted.  
-[Playing With Matches](../../whoops/FireMuhaha/)
+[When WSUS Goes Wrong](../../whoops/8amserver/) | A Story of servers updating at 8AM Monday Morn.  
+[NO Backups, No Files](../../whoops/usbserver/) | A Story of a USB Stick, and a server being deleted.  
+[Playing With Matches](../../whoops/FireMuhaha/) | A Story of using fire to fix a computer.  
+[Broadcast Storm & Missing Switch](../../whoops/BroadcastStorm/) | A Story of overthinking.  
+[Printer Chips](../../whoops/PrinterChip/) | A Story of a HP Printer  
+[Smoking Out the Boss' Boss](../../whoops/SmokeyBoi/) | A Story about a smoke machine...  
+[Script Goes Beep](../../whoops/ScriptGoesBeep/) | A Story of RTFM  
+[Bang goes the user files](../../whoops/IntakeGoesByeBye/) | A Story of a big whoops  
 
 ### Stories TODO
-
-Broadcast storm, core switch being fat, reimage
-
-script goes beep

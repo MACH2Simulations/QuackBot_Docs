@@ -21,6 +21,8 @@ We chose this for a few reasons
 5) The HP 4025 we had was a beast, despite it lying about wanting toner when it wanted paper.  
 6) Nothing from Brother in the right price range at the time (Our Other main model)
 
+## Story
+
 Printers being printers, it was an utter pain to set up and get printing properly too. I ***think*** this one was more of a pain than normal.  
 
 But now we get to the issue, and one of the ***Best/worse*** bodges I have had to have do.  

@@ -1,12 +1,11 @@
 +++
 title = '8 AM Server updates'
 date = 2024-02-11T16:58:05Z
-Weight = 1
 +++
 
-Relatively early into my IT Career, say a year / 18 months, I rebuilt the WSUS server at my work.  
-Those who know the pain of WSUS know that to keep it working it needs to be rebuilt every now and then so it keeps working, and it hadn't been working for a while so I took it on as a project.  
-"Money" is why were didn't user SCCM/Intune  
+>Relatively early into my IT Career, say a year / 18 months, I rebuilt the WSUS server at my work.  
+>Those who know the pain of WSUS know that to keep it working it needs to be rebuilt every now and then so it keeps working, and it hadn't been working for a while so I took it on as a project.  
+>"Money" is why we didn't use SCCM/Intune  
 
 I Read the docs several times, and got to work following them were I needed to. I Selected what update packs we needed at the time, Windows Server 2012, Windows 10 etc.  
 I Put the computers into groups; Student desktops, Teacher Desktops, Laptops, Servers. As would make sense for our network at the time.
