@@ -29,7 +29,7 @@ But now we get to the issue, and one of the ***Best/worse*** bodges I have had t
 We used compatible toners, with school budgets and far to many printers, its very hard to justify getting 1 OEM toner for the price of a set and half of compatibles, despite all of the issues that happen with compats.  
 
 Between install and the first orders of spare toner, I'd read the stuff from HP About the stuff they were doing with compatibles, but had also updated the firmware on the printer during the install to fix some issues.  
-So I Told [Womble](../../whoops/#wombel) that they should order Chipless compatibles, this made sense at the time and had made sense based on the settings i had read on the control panel too...  
+So I Told [Noodle](../../whoops/#Noodle) that they should order Chipless compatibles, this made sense at the time and had made sense based on the settings i had read on the control panel too...  
 ***I couldn't have been more wrong!***  
 
 They did not work at all, Computer says no, [low on cyan (X/Twit Link Contains Swearing)](https://x.com/System32Comics/status/1357378757972004865)  

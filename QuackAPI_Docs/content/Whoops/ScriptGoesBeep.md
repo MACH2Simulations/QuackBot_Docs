@@ -1,5 +1,5 @@
 +++
-title = '(Womble) Script Goes Beep'
+title = '(Noodle) Script Goes Beep'
 date = 2024-06-21T21:45:11+01:00
 +++
 
@@ -29,7 +29,7 @@ It had very verbose logging (Around 50 different printed messages)
 
 The script was pretty much set and forget. Plenty of other things to do that isn't watching powershell create 100 users. So there was audio feedback when the script was running if it was done or needed user intervention.  
 
-Womble was going to do the user creation for the new year 7's  
+Noodle was going to do the user creation for the new year 7's  
 
 1) Sanity Check all data is there  
 2) Open ISE  
@@ -59,7 +59,7 @@ Looking at the dates im not 100% sure if this was the new year 7s but it was def
 
 ---
 
-The irony is as this was happing i modified a copy of the script to play a dinosaur roar, for if / when this happens again, it would be far more obvious.  When Womble copied the script again, it stopped working because it couldn't find the sound file.  
+The irony is as this was happing i modified a copy of the script to play a dinosaur roar, for if / when this happens again, it would be far more obvious.  When Noodle copied the script again, it stopped working because it couldn't find the sound file.  
 Script wasn't working, i brushed it off as user error and told them they need to do some troubleshooting.  
 They didn't troubleshoot and just got the boss to come take a look (they sent an email 5 minutes after i said i couldn't help at the time). 30 second fix once i knew the error...  
 ***Shrug Emoji***  

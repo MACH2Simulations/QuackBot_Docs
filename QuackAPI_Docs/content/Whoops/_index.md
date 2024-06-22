@@ -21,9 +21,9 @@ This page will contain short 1/2 Liners/Tidbits that aren't big enough for there
 
 Some of these stories need quite a bit of context / Additional info for the story to make sense, ill try to add a marker to where the story actually starts if its quite a bit of context.  
 
-### Wombel  
+### Noodle  
 
-There maybe some stories about a Co Worker I will call ***"Womble"***, they had some very interesting ways of doing things.  
+There maybe some stories about a Co Worker I will call ***"Noodle"***, they had some very interesting ways of doing things.  
 
 ## Tidbits and Anecdote
 

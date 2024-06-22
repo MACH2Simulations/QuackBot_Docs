@@ -15,7 +15,7 @@ In practice it ended up being a more T3/Sysadmin role. I Was managing most of th
 The really really hard stuff the Boss or Mr A did, but they only had a couple of hours a week on a good week where they could spend on technical issues.  
 
 As I Was significantly more technically minded i was supposed to be focusing on the more technical stuff, and i loved the challenge of the harder stuff.  
-Wombel was supposed to handle the more T1 Stuff and Paper adminy things, Password resets, Login issues, Purchase orders etc. They were also supposed to spend 1 day a week doing none IT Adminy things, like grants (not sure the what or why but its besides the point)  
+Noodle was supposed to handle the more T1 Stuff and Paper adminy things, Password resets, Login issues, Purchase orders etc. They were also supposed to spend 1 day a week doing none IT Adminy things, like grants (not sure the what or why but its besides the point)  
 
 This didn't end up happening.  
 In the end i was doing my T3 Work, 95% of the sites T1 Work and then to top it off fixing the many many mistakes they made.  
