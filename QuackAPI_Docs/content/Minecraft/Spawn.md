@@ -22,7 +22,7 @@ A Nice rainbow Robot, first community project!
 
 ## Aquarium  
 
-The Aquarium (Close For Maintenance) - Community Member Built
+The Aquarium (Closed For Maintenance) - Community Member Built
 
 ![Pride Robot](../../Minecraft/mcshots/aquarium.png)
 
