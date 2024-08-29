@@ -54,7 +54,7 @@
 
 [menu]
   [[menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-github-alt'></i> Github"
+    name = "<i class='fa-fw fa fa-github-alt'></i> Github"
     url = 'https://github.com/MACH2Simulations'
 
   [[menu.shortcuts]]
