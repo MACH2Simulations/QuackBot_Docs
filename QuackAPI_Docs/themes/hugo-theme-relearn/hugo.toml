@@ -54,9 +54,9 @@
 
 [menu]
   [[menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-tags'></i> Github"
+    name = "<i class='fa-fw fas fa-github-alt'></i> Github"
     url = 'https://github.com/MACH2Simulations'
 
   [[menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-layer-group'></i> Status"
+    name = "<i class='fa-fw fa fa-heartbeat'></i> Status"
     url = 'https://status.m2s.uk/'
