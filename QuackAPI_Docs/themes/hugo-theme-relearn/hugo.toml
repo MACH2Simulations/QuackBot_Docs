@@ -52,6 +52,11 @@
     name = "OpenApi"
     location = "footer"
 
+[menu]
+  [[menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-tags'></i> Github"
+    url = 'https://github.com/MACH2Simulations'
 
-
-
+  [[menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-layer-group'></i> Status"
+    url = 'https://status.m2s.uk/'
