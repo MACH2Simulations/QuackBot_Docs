@@ -55,4 +55,5 @@ Dear Developers, for the love of all that's holy, give me a proper error message
 
 ### Stories TODO
 
+DNS Not us
 Cooking the servers (aircon) & aircon warm in winter
