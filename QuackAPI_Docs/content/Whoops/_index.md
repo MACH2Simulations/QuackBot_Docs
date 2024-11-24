@@ -55,4 +55,6 @@ Dear Developers, for the love of all that's holy, give me a proper error message
 
 ### Stories TODO
 
-Cooking the servers (aircon) & aircon warm in winter
+DNS Not us  
+Dell Cannot find a screw   
+Cooking the servers (aircon) & aircon warm in winter  
