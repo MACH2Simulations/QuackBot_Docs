@@ -60,3 +60,7 @@
   [[menu.shortcuts]]
     name = "<i class='fa-fw fa fa-heartbeat'></i> Status"
     url = 'https://status.m2s.uk/'
+
+    [[menu.shortcuts]]
+    name = "<i class='fa-fw fa fa-heartbeat'></i> My CV"
+    url = 'https://cv.m2s.uk/'
