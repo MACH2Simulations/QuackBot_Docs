@@ -5,6 +5,10 @@ weight = 3
 +++
 
 ***New FiveM Stuff.***  
+currently moved to [More FiveM](https://fivemdocs.m2s.uk)
+
+
+
 
 Machs Hunting | **{{% include "/fivem/machshunting.txt" %}}**
 
