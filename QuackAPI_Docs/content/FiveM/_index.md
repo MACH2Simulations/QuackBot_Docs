@@ -9,9 +9,3 @@ currently moved to [More FiveM](https://fivemdocs.m2s.uk)
 
 
 
-
-Machs Hunting | **{{% include "/fivem/machshunting.txt" %}}**
-
-MachsBD | **{{% include "/fivem/machsbd.txt" %}}**
-
-Machs Functions | **{{% include "/fivem/machsfunct.txt" %}}**

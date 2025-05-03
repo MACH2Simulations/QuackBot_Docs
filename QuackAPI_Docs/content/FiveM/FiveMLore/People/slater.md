@@ -5,7 +5,7 @@ weight = 1
 
 ##### Short Bio  
 
-{{% include "/fivem/fivemlore/people/slater_short.txt" %}}
+
 
 ### Assositations  
 

@@ -9,4 +9,4 @@ weight = 1
 ### Fire Dept
 
 #### Chief Slater  
-{{% include "/fivem/fivemlore/people/slater_short.txt" %}}  [Full Bio](/fivem/fivemlore/people/slater)
+ [Full Bio](/fivem/fivemlore/people/slater)

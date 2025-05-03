@@ -1,7 +1,7 @@
 +++ 
 title = "Prometheus Heavy Industries"
 +++
-{{% include "/fivem/fivemlore/places/phi_short.txt" %}}
+
 
 Located at Maze bank tower (west) on prosperity.  
 
