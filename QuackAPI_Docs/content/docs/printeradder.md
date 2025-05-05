@@ -1,6 +1,7 @@
 +++ 
 title = "Print Adder V2"
 Weight = 1 
+icon = "print"
 +++
 
 {{< table >}}

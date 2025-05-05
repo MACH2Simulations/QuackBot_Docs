@@ -4,6 +4,7 @@ title = 'm2s docs'
 contentDir = 'content'
 enableEmoji = true
 
+
 [module]
     # uncomment line below for temporary local development of module
     # or when using a 'theme' as a git submodule
@@ -15,6 +16,11 @@ enableEmoji = true
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss"
         disable = false
+    [[module.imports]]
+        path = "github.com/hugomods/swagger-ui"
+        disable = false
+	
+
 
 [params.social]
   github = "mach2simulations"
@@ -26,6 +32,8 @@ enableEmoji = true
   prism = true
   prismTheme = "lucario"
   line-numbers = true
+  lastMod         = true  
+  sidebarIcons = true
   
 
 [params.flexsearch]
@@ -42,5 +50,19 @@ enableEmoji = true
     [markup.goldmark.parser.attribute]
       block = true
 
+
+
 [params.footer]
-  copyright = "® 2025 [MACH 2 Simulations](https://thegatewaytoanewworld.com)"
+  copyright = "© 2025 [MACH 2 Simulations](https://thegatewaytoanewworld.com)"
+  version   = true
+
+  [[menu.primary]]
+    name  = "CV"
+    url = "https://cv.m2s.uk/"
+    identifier = "CV"
+    weight = 800
+  [[menu.primary]]
+    name  = "Status Page"
+    url = "https://status.m2s.uk/"
+    identifier = "status"
+    weight = 700

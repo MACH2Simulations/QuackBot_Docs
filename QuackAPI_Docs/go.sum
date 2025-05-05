@@ -1,4 +1,8 @@
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWwrtijAhUbf3BiRLmpO5j34bgl1ggU=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
+github.com/hugomods/swagger-ui v0.2.0 h1:1X2g+g5y+KN2HJQCMggxIFLJA11vrKIAozkSe2xM5cc=
+github.com/hugomods/swagger-ui v0.2.0/go.mod h1:Q6Y/tRLuBUKlaUMG0clksot1kh0/g2auVidw45AUvQQ=
+github.com/swagger-api/swagger-ui v5.21.0+incompatible h1:y3eonB8ellAJmHb3VhM2BbRC3Xd44JGhRtwFKtcGa0Y=
+github.com/swagger-api/swagger-ui v5.21.0+incompatible/go.mod h1:2BrmZAt3ELMzcg/T43oDWQI2wmltgIo6fQoIcmncb9o=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

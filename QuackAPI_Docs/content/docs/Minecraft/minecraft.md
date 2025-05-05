@@ -2,7 +2,7 @@
 archetype = "chapter"
 title = "Minecraft"
 icon = "brick"
-weight = 2
+weight = 1
 +++
 
 
