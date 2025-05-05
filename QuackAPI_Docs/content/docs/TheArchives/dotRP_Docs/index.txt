@@ -1,0 +1,42 @@
++++ 
+title = "dotRP-Dev"
++++
+# dotRP Dev Documentation
+
+[Core Our Stuff](/docs/core.md)
+[Core Theres](https://docs.c8re.store/)
+
+---
+
+## Rolling Patch Schedule  
+
+Week 1 - GABS Updates, Artefacts, any other major scripts  
+Week 2 - Config updates, Add Cars  
+Week 3 - Patches, shop additions, Car additions / handling updates  
+Week 4 - Infrastructure such as windows updates.  
+Week 5 - Not doing anything past breaking  
+
+Breaking changes will be fixed taking priority over everything  
+
+NOTE: In the event of a out of cycle Vulnerability update with a CVSS score of 9/10 this WILL BE UPDATED AS SOON AS AVALIABLE, THIS MEANS THIS WILL HAPPEN MID EVENT IF NESSASARY WITH LITTLE WARNING
+that being said in the event of a CVSS 9/10 update there is usually a couple of hours warning so people will be warned the server will just go off at some point  
+***THIS IS NOT SOMETHING WE CAN OR SHOULD BUDGE ON***
+
+CVS9/10 Are shit hits fan level of bad
+
+---
+
+## Pushing tickets to JIRA
+
+>1) Get all normal troubleshooting stuff  
+>2) Rename using $Rename xxxx
+>3) Type +jira
+
+---
+
+## Change Freezes 
+
+
+
+
+

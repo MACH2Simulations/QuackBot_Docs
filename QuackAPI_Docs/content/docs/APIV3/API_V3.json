@@ -1,0 +1,86 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "QuackBot API V3",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://apiv3.m2s/bz/api/",
+    "description" : "Main"
+  } ],
+  "tags" : [ {
+    "name" : "Live",
+    "description" : "Live Endpoints"
+  }, {
+    "name" : "Testing",
+    "description" : "Endpoints Being Testted"
+  }, {
+    "name" : "Deprecated",
+    "description" : "No Longer Live"
+  } ],
+  "paths" : {
+    "/Suggest" : {
+      "get" : {
+        "tags" : [ "Live" ],
+        "summary" : "Creates a discord thread with information passed through.",
+        "description" : "Creates a discord thread with information passed through.\n",
+        "operationId" : "Suggest",
+        "parameters" : [ {
+          "name" : "code",
+          "in" : "query",
+          "description" : "API Key",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "sgst",
+          "in" : "query",
+          "description" : "The Suggestion being passed through, This MUST Have a \"/\" in it, as this is what splits the title from the Idea",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string",
+            "example" : "More cats / We should have more cats"
+          }
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "The Name of the user giving the idea",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "did",
+          "in" : "query",
+          "description" : "The Discord ID of the \"Forum\" Channel",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 100000000000
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "Plain Text \"Sent To Discord\""
+          },
+          "400" : {
+            "description" : "bad input parameter"
+          },
+          "401" : {
+            "description" : "Missing API Key / Pramas"
+          }
+        }
+      }
+    }
+  },
+  "components" : { }
+}
