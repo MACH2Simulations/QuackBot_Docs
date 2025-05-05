@@ -1,3 +1,0 @@
-name,label,weight,rare,can_remove,degrade_modifier,unique,description,x,y,category
-"The name of the item, always lowercase, no spaces or spec chars",How you want it to be displayed in inventory,a weight (0 if using core inventory),Always 0,Always 1,Best set to 1,Always 0,opt discription,Core inventroy Size,,Core inventory category
-drink_flaming_slater,Flaming Slater,0,0,1,1,0,Boom Peepo Drunk,1,1,drinks
