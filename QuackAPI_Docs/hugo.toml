@@ -1,4 +1,4 @@
-baseURL = 'https://docs.m2s.uk/'
+baseURL = 'https://newtheme.quackbot-docs.pages.dev'
 languageCode = 'en-gb'
 title = 'm2s docs'
 contentDir = 'content'
