@@ -1,6 +1,6 @@
----
-id: Slater
----
++++
+title = "Slater"
++++
 # Chief Slater
 
 ## Short Bio  

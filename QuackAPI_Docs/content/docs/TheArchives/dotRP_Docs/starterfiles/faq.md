@@ -1,13 +1,13 @@
----
-id: dotRP-Faq
----
++++
+title = "dotRP-Faq"
++++
 # FAQ
 
 > Welcome to our FAQ where we answer common Questions  
 
 ## How Do I Apply?  
 
-Click [here](/apply] and fill out the form  
+Click xxx and fill out the form  
 
 ## Is it free?
 

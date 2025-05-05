@@ -1,6 +1,6 @@
----
-id: Kraken
----
++++
+title = "Kraken"
++++
 # ALL HAIL THE KRAKEN  
 
 ***ALL HAIL THE KRAKEN***
