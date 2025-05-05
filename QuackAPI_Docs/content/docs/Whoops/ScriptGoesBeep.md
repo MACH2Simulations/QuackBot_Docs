@@ -9,7 +9,7 @@ Sometime Late time at the grammar.
 > This person whom i didn't help in this situation had ***far beyond*** what would be classed as normal support in learning the tools we used. Everyone in the dept had helped them at some point to learn this process.  
 > This included several ***show***, ***tell*** and ***Watch*** walkthroughs of using this tool  
 > And a guide which i feel could be handed to almost anyone and if taught how to open powershell how it was needed could likely run this process.  
-> See also [Burnout]({{% relref "../Whoops/BurnOut.md" %}})
+> See also [Burnout]({{% relref "whoops/burnout" %}})
 
 ### Create_MassUsers_Version_7.ps1  
 
@@ -55,7 +55,7 @@ Looking at the dates im not 100% sure if this was the new year 7s but it was def
 > One part of me says i should have said something 5 mins in.  
 > The other part says sometimes people need to fail at a thing, and given this had 0 long term harm failing it  
 > But also it should never have gotten to this point & i should really have spoken to the boss a long long time before this discussing my concerns and issues  
-> See also [Burnout]({{% relref "../Whoops/BurnOut.md" %}})
+> See also [Burnout]({{% relref "whoops/burnout" %}})
 ---
 
 The irony is as this was happing i modified a copy of the script to play a dinosaur roar, for if / when this happens again, it would be far more obvious.  When Noodle copied the script again, it stopped working because it couldn't find the sound file.  
