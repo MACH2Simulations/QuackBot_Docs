@@ -4,7 +4,8 @@ title = 'm2s docs'
 contentDir = 'content'
 enableEmoji = true
 
-
+[params.landingpage]
+        enabled = true
 [module]
     # uncomment line below for temporary local development of module
     # or when using a 'theme' as a git submodule
