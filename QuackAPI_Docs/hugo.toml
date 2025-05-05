@@ -24,7 +24,7 @@ enableEmoji = true
   bluesky = "m2s.uk"
 
 [params.docs]
-  intLinkTooltip   = false
+  intLinkTooltip   = true
   darkMode = true
   prism = true
   prismTheme = "lucario"
