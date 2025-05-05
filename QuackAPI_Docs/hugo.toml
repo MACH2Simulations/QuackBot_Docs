@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 baseURL = 'https://dev.docs.m2s.uk/'
-=======
-baseURL = 'https://newtheme.quackbot-docs.pages.dev'
->>>>>>> origin/NewTheme
 languageCode = 'en-gb'
 title = 'm2s docs'
 contentDir = 'content'
