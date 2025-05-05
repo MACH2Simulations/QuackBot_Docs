@@ -32,7 +32,7 @@ enableEmoji = true
   line-numbers = true
   lastMod         = true  
   sidebarIcons = true
-  pathName        = "a"  
+  pathName        = "docs"  
   
 
 [params.flexsearch]
