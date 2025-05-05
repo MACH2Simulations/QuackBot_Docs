@@ -1,4 +1,4 @@
-baseURL = 'https://dev.docs.m2s.uk/'
+baseURL = 'https://docs.m2s.uk/'
 languageCode = 'en-gb'
 title = 'm2s docs'
 contentDir = 'content'

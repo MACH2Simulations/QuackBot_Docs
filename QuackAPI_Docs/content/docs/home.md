@@ -1,6 +1,6 @@
 +++
-archetype = "home"
-title = "QuackBot API"
+title = "QuackBot API Home"
+weight = 1
 +++
 
 Welcome to my Documentation / Blog site.  
