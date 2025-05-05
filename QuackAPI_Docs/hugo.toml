@@ -5,7 +5,7 @@ contentDir = 'content'
 enableEmoji = true
 
 [params.landingpage]
-        enabled = true
+        enabled = false
 [module]
     # uncomment line below for temporary local development of module
     # or when using a 'theme' as a git submodule
