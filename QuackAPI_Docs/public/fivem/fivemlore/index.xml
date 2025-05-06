@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lore on Quack Bot API Docs</title>
+    <link>http://localhost:1313/fivem/fivemlore/index.html</link>
+    <description>Recent content in Lore on Quack Bot API Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/fivem/fivemlore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>People</title>
+      <link>http://localhost:1313/fivem/fivemlore/people/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fivem/fivemlore/people/index.html</guid>
+      <description>The People Of The Server. Fire Dept Chief Slater &amp;ldquo;Slater! The pyromaniac Fire Chief he thrives in the chaos of Los Santos. He likes things that move fast, go boom or fly high (well preferably all 3 at once). And Would burn down the city to protect those he cares about!&amp;rdquo; Full Bio</description>
+    </item>
+    <item>
+      <title>Places</title>
+      <link>http://localhost:1313/fivem/fivemlore/places/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fivem/fivemlore/places/index.html</guid>
+      <description>The Places and Institions Of The Server.</description>
+    </item>
+    <item>
+      <title>Things</title>
+      <link>http://localhost:1313/fivem/fivemlore/things/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fivem/fivemlore/things/index.html</guid>
+      <description>For Everything else that doesn&amp;rsquo;t quite fit elsewhere</description>
+    </item>
+  </channel>
+</rss>

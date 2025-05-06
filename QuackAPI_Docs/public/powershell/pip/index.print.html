@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PowerShell PIP Bulk Installer :: Quack Bot API Docs">
+    <meta name="twitter:description" content="This script will bulk install a list of given Python modules and can be ran on user logon (once per device) using GPO.
+It then creates a text file so it doesn&rsquo;t reinstall the modules every time.
+Note: This will update and reinstall all the packages listed.
+Requirements Python installed to &ldquo;All Users&rdquo; Pip Installed PowerShell This has been tested and works with Python 3.10 - 3.13
+The Script itself Python_Packages_313.">
+    <meta property="og:title" content="PowerShell PIP Bulk Installer :: Quack Bot API Docs">
+    <meta property="og:description" content="This script will bulk install a list of given Python modules and can be ran on user logon (once per device) using GPO.
+It then creates a text file so it doesn&rsquo;t reinstall the modules every time.
+Note: This will update and reinstall all the packages listed.
+Requirements Python installed to &ldquo;All Users&rdquo; Pip Installed PowerShell This has been tested and works with Python 3.10 - 3.13
+The Script itself Python_Packages_313.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/powershell/pip/index.html">
+    <meta property="article:section" content="PowerShell :: Quack Bot API Docs">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>PowerShell PIP Bulk Installer :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/powershell/pip/index.html" rel="canonical" type="text/html" title="PowerShell PIP Bulk Installer :: Quack Bot API Docs">
+    <link href="/powershell/pip/index.xml" rel="alternate" type="application/rss+xml" title="PowerShell PIP Bulk Installer :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/powershell/pip/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/powershell/index.html"><span itemprop="name">PowerShell</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">PowerShell PIP Bulk Installer</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="powershell-pip-bulk-installer">PowerShell PIP Bulk Installer</h1>
+
+<p>This script will bulk install a list of given Python modules and can be ran on user logon (once per device) using GPO.<br>
+It then creates a text file so it doesn&rsquo;t reinstall the modules every time.<br>
+Note: This will update and reinstall all the packages listed.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Python installed to &ldquo;All Users&rdquo;</li>
+<li>Pip Installed</li>
+<li>PowerShell</li>
+</ul>
+<p>This has been tested and works with Python 3.10 - 3.13</p>
+<h2 id="the-script-itself">The Script itself</h2>
+<p><a href="/powershell/pip/../../Python_Packages_313.ps1">Python_Packages_313.ps1</a><br>
+<a href="/powershell/pip/../../Python_Packages_313_Logger.ps1">Python_Packages_313_Logger.ps1</a></p>
+<p>Update log path, Python path and the .txt file as appropriate for your environment.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (!(Get-Item c:\Pip313.txt)){
+</span></span><span style="display:flex;"><span>    $PythonPath = <span style="color:#e6db74">&#34;C:\Program Files\Python313\python.exe&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (Get-Item $PythonPath){
+</span></span><span style="display:flex;"><span>    $packages = <span style="color:#e6db74">&#34;matplotlib&#34;</span>,<span style="color:#e6db74">&#34;thonny&#34;</span>,<span style="color:#e6db74">&#34;numpy&#34;</span>,<span style="color:#e6db74">&#34;easygui&#34;</span>,<span style="color:#e6db74">&#34;pyparsing&#34;</span>,<span style="color:#e6db74">&#34;tomli&#34;</span>, <span style="color:#e6db74">&#34;piglet&#34;</span>,<span style="color:#e6db74">&#34;astroid&#34;</span>,<span style="color:#e6db74">&#34;pillow&#34;</span>,<span style="color:#e6db74">&#34;sphinx&#34;</span>,<span style="color:#e6db74">&#34;pygame&#34;</span>,<span style="color:#e6db74">&#34;twine&#34;</span>,<span style="color:#e6db74">&#34;python-docx&#34;</span>
+</span></span><span style="display:flex;"><span>    $Proxy = <span style="color:#e6db74">&#34;1.1.1.1:9999&#34;</span>
+</span></span><span style="display:flex;"><span>    &amp; $PythonPath -m pip install --upgrade pip --proxy <span style="color:#e6db74">&#34;http://</span>$Proxy<span style="color:#e6db74">&#34;</span> --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+</span></span><span style="display:flex;"><span>    Start-Sleep -Seconds <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ($Package <span style="color:#66d9ef">in</span> $Packages){
+</span></span><span style="display:flex;"><span>    &amp; $PythonPath -m pip install $Package --force-reinstall --upgrade --proxy <span style="color:#e6db74">&#34;http://</span>$Proxy<span style="color:#e6db74">&#34;</span> --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    New-Item c:\Pip313.txt -Force
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Python Is Not Installed&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h2 id="the-logging-version">The logging version</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (!(Get-Item c:\Pip313.txt)){
+</span></span><span style="display:flex;"><span>    $Date = Get-Date -Format dd_MM_yyyy_hh_mm
+</span></span><span style="display:flex;"><span>    $HostN = HOSTNAME
+</span></span><span style="display:flex;"><span>    Start-Transcript <span style="color:#e6db74">&#34;c:\</span>$HostN<span style="color:#e6db74">`_</span>$Date<span style="color:#e6db74">.txt&#34;</span> <span style="color:#75715e">#Logging</span>
+</span></span><span style="display:flex;"><span>    $PythonPath = <span style="color:#e6db74">&#34;C:\Program Files\Python313\python.exe&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (Get-Item $PythonPath){
+</span></span><span style="display:flex;"><span>    $packages = <span style="color:#e6db74">&#34;matplotlib&#34;</span>,<span style="color:#e6db74">&#34;thonny&#34;</span>,<span style="color:#e6db74">&#34;numpy&#34;</span>,<span style="color:#e6db74">&#34;easygui&#34;</span>,<span style="color:#e6db74">&#34;pyparsing&#34;</span>,<span style="color:#e6db74">&#34;tomli&#34;</span>, <span style="color:#e6db74">&#34;piglet&#34;</span>,<span style="color:#e6db74">&#34;astroid&#34;</span>,<span style="color:#e6db74">&#34;pillow&#34;</span>,<span style="color:#e6db74">&#34;sphinx&#34;</span>,<span style="color:#e6db74">&#34;pygame&#34;</span>,<span style="color:#e6db74">&#34;twine&#34;</span>,<span style="color:#e6db74">&#34;python-docx&#34;</span>
+</span></span><span style="display:flex;"><span>    $Proxy = <span style="color:#e6db74">&#34;1.1.1.1:9999&#34;</span>
+</span></span><span style="display:flex;"><span>    &amp; $PythonPath -m pip install --upgrade pip --proxy <span style="color:#e6db74">&#34;http://</span>$Proxy<span style="color:#e6db74">&#34;</span> --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+</span></span><span style="display:flex;"><span>    Start-Sleep -Seconds <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ($Package <span style="color:#66d9ef">in</span> $Packages){
+</span></span><span style="display:flex;"><span>    &amp; $PythonPath -m pip install $Package --force-reinstall --upgrade --proxy <span style="color:#e6db74">&#34;http://</span>$Proxy<span style="color:#e6db74">&#34;</span> --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    New-Item c:\Pip313.txt -Force
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Python Is Not Installed&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    Stop-Transcript 
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

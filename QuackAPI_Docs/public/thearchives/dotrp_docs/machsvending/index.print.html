@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="MachsVedning :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Machs Vending [ESX] UNDER CONSTRUCTION Please read our Documentation For help with configuration
+Get it on tebex - TODO - NOT YET FOR SALE
+Description Introducing Machs Vending, a ESX Based job script for FiveM! This script is perfect for those looking to add more dynamic and interactive jobs to their servers.
+Using QTarget* you can now offer your players the opportunity to become Vending Machine Operators, interacting with customers and restocking machines throughout the city.">
+    <meta property="og:title" content="MachsVedning :: Quack Bot API Docs">
+    <meta property="og:description" content="Machs Vending [ESX] UNDER CONSTRUCTION Please read our Documentation For help with configuration
+Get it on tebex - TODO - NOT YET FOR SALE
+Description Introducing Machs Vending, a ESX Based job script for FiveM! This script is perfect for those looking to add more dynamic and interactive jobs to their servers.
+Using QTarget* you can now offer your players the opportunity to become Vending Machine Operators, interacting with customers and restocking machines throughout the city.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/dotrp_docs/machsvending/index.html">
+    <meta property="article:section" content="DotRP Home (Archive) :: Quack Bot API Docs">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>MachsVedning :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/dotrp_docs/machsvending/index.html" rel="canonical" type="text/html" title="MachsVedning :: Quack Bot API Docs">
+    <link href="/thearchives/dotrp_docs/machsvending/index.xml" rel="alternate" type="application/rss+xml" title="MachsVedning :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/dotrp_docs/machsvending/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/dotrp_docs/index.html"><span itemprop="name">DotRP Home (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">MachsVedning</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="machsvedning">MachsVedning</h1>
+
+<h1 id="machs-vending-esx">Machs Vending [ESX]</h1>
+<p><a href="https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking" target="_blank"><a href="#R-image-e9ccb99601c8666cffca54794c286ad1" class="lightbox-link"><img src="https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking.svg" alt="GitHub version" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9ccb99601c8666cffca54794c286ad1"><img src="https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking.svg" alt="GitHub version" class="lightbox-image border lightbox noshadow" loading="lazy"></a></a>
+<a href="https://wakatime.com/badge/github/dotRP/MachsVending" target="_blank"><a href="#R-image-0ac3ebd0d072df5690cf952bc0a78ba4" class="lightbox-link"><img src="https://wakatime.com/badge/github/dotRP/MachsVending.svg" alt="wakatime" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ac3ebd0d072df5690cf952bc0a78ba4"><img src="https://wakatime.com/badge/github/dotRP/MachsVending.svg" alt="wakatime" class="lightbox-image border lightbox noshadow" loading="lazy"></a></a></p>
+<h2 id="under-construction">UNDER CONSTRUCTION</h2>
+<p>Please read our <a href="https://docs.dotroleplay.com/machsvending" target="_blank">Documentation</a> For help with configuration</p>
+<p><a href="#R-image-ffaca8798c2bb6021cf517b2b90c8fc7" class="lightbox-link"><img src="https://docs.dotroleplay.com/machsvendingheader.png" alt="image" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ffaca8798c2bb6021cf517b2b90c8fc7"><img src="https://docs.dotroleplay.com/machsvendingheader.png" alt="image" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<hr>
+<p><a href="https://store.dotroleplay.com/" target="_blank">Get it on tebex - TODO</a> - NOT YET FOR SALE</p>
+<h2 id="description">Description</h2>
+<p>Introducing Machs Vending, a ESX Based job script for FiveM! This script is perfect for those looking to add more dynamic and interactive jobs to their servers.<br>
+Using QTarget* you can now offer your players the opportunity to become Vending Machine Operators, interacting with customers and restocking machines throughout the city.</p>
+<p>This script allows your players to manage company inventory, restock machines, and collect payments with ease. It&rsquo;s a perfect addition to any economy-based server, as players can earn money by selling a variety of snacks and drinks to thirsty citizens. The script is easy to install and can be customized to suit the needs of your server.</p>
+<p>Our Vending Machine job script is a great way to add a unique and engaging job for your players, and give them an opportunity to make money in a fun and interactive way. With the script, your players can become entrepreneurs, managing their own vending machine empire and building their reputation throughout the city.</p>
+<blockquote>
+<p>Generated the <em><strong>DESCRIPTION</strong></em> In chatGPT and then cleaned it up. Because I am terrible with words.<br>
+&ldquo;*&rdquo; I Believe the script should be drop in replaceable with OX_Target, however this is untested and will require YOU To modify the script</p>
+</blockquote>
+<h2 id="features">Features</h2>
+<ul>
+<li>Stock System - Each Machine tracks stock of each item within it and can be refilled by a person with the right job.</li>
+<li>Self Initializing - No more adding 1000 entries into the database, this does it itself on the first use.</li>
+<li>Tax - Take an amount per item and have it go into a separate tax box in each machine</li>
+<li>Cash - The money needs to be collected from each machine</li>
+<li>Low Stock Blips</li>
+<li>From the job menu or boss pc, get the locations of all machines with a low stock to show on your map</li>
+<li>Works out the box with the <em><strong>Default</strong></em> GTA Vending props: Coffee Machine, Fixed Coffee Carts , Sprunk &amp; Cola, Snacks, Raine Water, Slush Machines and most water coolers</li>
+<li>Theft - People can break into the machines and steal money<br>
+Minigame - Works with some hacking/lockpick minigames</li>
+<li>Police Notify <em><strong>Function</strong></em> - A Function for you to implement a dispatch / PD notification, works out the box with CORE_DISPATCH</li>
+</ul>
+<h2 id="video">Video</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="requirements">Requirements</h2>
+<h3 id="mlo">MLO</h3>
+<p>We use <a href="https://www.gta5-mods.com/maps/mlo-warehouse-port-add-on-sp-alt-v-ragemp-fivem-aspidemon" target="_blank">Warehouse Port</a> by aspidemon</p>
+<h3 id="scripts">Scripts</h3>
+<ul>
+<li><a href="https://github.com/overextended/qtarget" target="_blank">QTarget</a> However <a href="https://github.com/overextended/ox_target" target="_blank">OXTarget</a> <em><strong>should</strong></em> work, but is untested.  and will require you to change all instances of &ldquo;qtarget&rdquo; to &ldquo;ox_target&rdquo;</li>
+<li><a href="https://github.com/overextended/ox_lib/" target="_blank">oxlib</a></li>
+<li><a href="https://github.com/overextended/oxmysql" target="_blank">oxmysql</a></li>
+<li><a href="https://github.com/esx-framework/esx_core" target="_blank">ESX</a> This requires EX_Extended for stuff such as ESX.TriggerServerCallback</li>
+<li><a href="https://github.com/whooith/nh-keyboard" target="_blank">nh-keyboard</a> - For boss PC inputs, have included our build bellow as i know this is one that can be funky with versions.</li>
+<li><a href="https://docs.dotroleplay.com/downloads/nh-keyboard.zip" target="_blank">nh-keyboard our version</a></li>
+<li><a href="https://github.com/utkuali/datacrack" target="_blank">UTK Datahack</a> - optional for hacking minigame</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Download the ZIP File from Keymaster.<br>
+It should be called MachsVendingVXXX With the XXX being a version number</li>
+<li>Unzip The Zip File</li>
+<li>Copy the &ldquo;MachsVending&rdquo; folder into your Resources folder</li>
+<li>Run Vending.SQL - You may have to edit the items section for your server</li>
+<li>Make sure you set &ldquo;JobMenu&rdquo; Key bind near the top of the Config File, as this will require client side changes if it needs to be changed</li>
+<li>add &ldquo;Start MachsVending&rdquo; to your config, this needs to be started AFTER ESX,qtarget,oxlib, oxmsql, nh-keyboard. It Runs fine from a [category]</li>
+</ul>
+<h2 id="known-issue">Known Issue</h2>
+<p>-When restarting the script often (such as testing when adding new machines/items) the Stock ped will sometimes show the menu for spawning a truck. A further restart fixes this. I have not had this happen naturally
+-Normal trickiness targeting stuff. This is a normal Targeting thing, just increase the distance variables in targeting.lua</p>
+<hr>
+<h2 id="job-description">Job Description</h2>
+<p>Chat GPT Generated a job description for this script</p>
+<p>&ldquo;Are you ready to quench the thirst of the citizens of Los Santos? Join our team as a Vending Machine Operator! As a Vending Machine Operator, you will be responsible for restocking, maintaining and collecting money from vending machines located throughout the city. You will interact with a diverse range of customers, from thirsty construction workers to busy office executives, and provide them with a variety of refreshing drinks and snacks.</p>
+<p>Using our qtarget and ESX based system, you will be able to manage your inventory, restock machines, and collect payments. You will need to be quick on your feet, able to handle cash and interact with customers in a professional manner. Your success will depend on your ability to maintain and restock machines in a timely manner, keeping them in top condition and stocked with the latest products.</p>
+<p>If you&rsquo;re looking for a dynamic job with plenty of interaction and opportunities to work independently, then the Vending Machine Operator role is for you. Apply now and join our team today!&rdquo;</p>
+<h3 id="todo--coming-soon">TODO &amp; Coming Soon</h3>
+<ul>
+<li>Add Cup Machines</li>
+<li>Collectable tax</li>
+</ul>
+<hr>
+<h2 id="documentation">Documentation</h2>
+<h3 id="config">Config</h3>
+<blockquote>
+<p>There is quite a few text entries in the config, not documenting here as it should be easy enough to work out what they are for and they can mostly be treated as where you would change translations.<br>
+We Also use the database heavily in this, so for instance each vending machine has its own column for tracking each possible stock item. So adding items will require you to add columns in the database.</p>
+</blockquote>
+<h4 id="esx-shared-object">ESX Shared Object</h4>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ESX_OBJECT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;esx:getSharedObject&#39;</span>, <span style="color:#75715e">--if you know what this is, you know if you need to change it</span></span></span></code></pre></div><h4 id="debugging">Debugging</h4>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>TargetDebug <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>,  <span style="color:#75715e">--This turns on debugging polys for objects that support it, must also be enable in targeting config.  </span>
+</span></span><span style="display:flex;"><span>Debug <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">-- This is script debugging, only needs to be on when you need to debug  </span></span></span></code></pre></div><h4 id="misc-script">Misc Script</h4>
+<p><a href="https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/" target="_blank">Key bind docs</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>CashLostPerVend <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, <span style="color:#75715e">--Treat this like a tax. With the default of 3, every $10 item sold gives the vending company $7</span>
+</span></span><span style="display:flex;"><span>JobMenu <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;f6&#34;</span>, <span style="color:#75715e">-- This must be changed before installing the script or it will require the player to set it manually CLIENT SIDE In the keybind settings</span>
+</span></span><span style="display:flex;"><span>AlignMenu <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;top-left&#34;</span>, <span style="color:#75715e">-- Where the ESX Job Menu will show </span></span></span></code></pre></div><h4 id="society-and-jobs">Society And Jobs</h4>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>MVSociety <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;society_vend&#34;</span>, <span style="color:#75715e">-- Society name, must match whats in the &#34;addon_account&#34; Table, you probably don&#39;t need to change this</span>
+</span></span><span style="display:flex;"><span>SocietyJobName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;vend&#34;</span>, <span style="color:#75715e">-- Job Name, must match whats in &#34;jobs&#34; Table you probably don&#39;t need to change this</span>
+</span></span><span style="display:flex;"><span>SocietyJobNameLabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sharks Vending&#34;</span>, <span style="color:#75715e">-- Job Label. used for some UI/Popups, can be anything</span>
+</span></span><span style="display:flex;"><span>Jobs <span style="color:#f92672">=</span> {[<span style="color:#e6db74">&#34;phi&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, [<span style="color:#e6db74">&#34;vend&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>}, <span style="color:#75715e">--Jobs that can access the machines for stocking etc, [&#34;jobname&#34;] = rank -- Can be multi jobs</span>
+</span></span><span style="display:flex;"><span>BossJob <span style="color:#f92672">=</span> {[<span style="color:#e6db74">&#34;phi&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, [<span style="color:#e6db74">&#34;vend&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> }, <span style="color:#75715e">-- Jobs that can access the boss actions</span>
+</span></span><span style="display:flex;"><span>CashRequiredItem <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reaperskey&#34;</span> <span style="color:#75715e">-- Item Required To Take Cash</span></span></span></code></pre></div><h4 id="crime">Crime</h4>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>Set if you want the machines to be able to be robbed here.<br>
+See &ldquo;PoliceAlert(coords,type)&rdquo; under functions on how to set PD notifications</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">----Crime</span>
+</span></span><span style="display:flex;"><span>Rob <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">-- IF this machines can be robbed</span>
+</span></span><span style="display:flex;"><span>PDNotify <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">-- Should it notify PD? You need to have set your own notify system. Works default with core_dispatch </span>
+</span></span><span style="display:flex;"><span>RequirePick <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>RandomTake <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">--should the ammount taken be random based on min max</span>
+</span></span><span style="display:flex;"><span>MaxTake <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, <span style="color:#75715e">--the most someone can take from a machine</span>
+</span></span><span style="display:flex;"><span>MinTake <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, 
+</span></span><span style="display:flex;"><span>NoMoneyStolenText <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Lol theres nothing in here, say hi to PD for me&#34;</span>,
+</span></span><span style="display:flex;"><span>Taken <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You Have Stole &#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--LockPickItem = &#34;lockpick&#34;, --This could be set to hackerlaptop if you are useing a hacky minigame</span>
+</span></span><span style="display:flex;"><span>LockPickItem <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;laptop_h&#34;</span>,
+</span></span><span style="display:flex;"><span>Failed <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You Failed to pick lol &#34;</span>,
+</span></span><span style="display:flex;"><span>NoItem <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You Need a &#34;</span>, <span style="color:#75715e">--LockPickItem</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--UsebaguscodestudioLockpick = false, --not convinced this was right</span>
+</span></span><span style="display:flex;"><span>UseUTKualiDatacrack <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>CustomLock <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>NoMinigame <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">-- Disables Mini game, but adds the delay bellow </span>
+</span></span><span style="display:flex;"><span>NoMiniGameDelay <span style="color:#f92672">==</span> <span style="color:#ae81ff">10000</span>, <span style="color:#75715e">--Adds a 10 second delay when mini game is turned off + loop delay (hidden counter), slows spam robbing </span>
+</span></span><span style="display:flex;"><span>BlackMoney <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">--Should it give black/red/dirty etc  </span>
+</span></span><span style="display:flex;"><span>BlackMoneyAccountName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;black_money&#34;</span>, <span style="color:#75715e">-- See What is in your ES_Extended config</span></span></span></code></pre></div><h4 id="stock">Stock</h4>
+<p><a href="https://docs.fivem.net/docs/game-references/blips/" target="_blank">FiveM Blips</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>AmmountPerVend <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e">-- How Much is given each time something is brought.</span>
+</span></span><span style="display:flex;"><span>Currency <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;$&#34;</span>, <span style="color:#75715e">--Whats shown for cash stuff IE &#34;you have been given $10&#34; when withdrwaing cash from machines </span>
+</span></span><span style="display:flex;"><span>StartStock <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>, <span style="color:#75715e">--How much stock the machines should start with, keep in mind if the machine hasn&#39;t been used before, this is how much stock that will materialize in it</span>
+</span></span><span style="display:flex;"><span>LowStock <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, <span style="color:#75715e">-- low stock value, at what point are the machines considered to have low stock. machines show on the map when &#34;show low stock&#34; in job menu is pressed</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- This is if ANY of the items in the machine have less than this value.</span>
+</span></span><span style="display:flex;"><span>LowStockBlip <span style="color:#f92672">=</span> <span style="color:#ae81ff">752</span>, <span style="color:#75715e">-- Blips for machines with low stock (when menu option selected), 752 is alien ship</span>
+</span></span><span style="display:flex;"><span>HQBlip <span style="color:#f92672">=</span> <span style="color:#ae81ff">752</span>, <span style="color:#75715e">-- Blip for the HQ Location</span>
+</span></span><span style="display:flex;"><span>BlipColour <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, <span style="color:#75715e">-- Colour of HQ Blip</span>
+</span></span><span style="display:flex;"><span>CompanyName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Shark Vending&#34;</span>, <span style="color:#75715e">-- HQ Blip Title on map</span></span></span></code></pre></div><h4 id="hot-drinks">Hot Drinks</h4>
+<blockquote>
+<p>This is a sample using the &ldquo;hotdrinks&rdquo; section of the config, similar name conventions are taken for other sections</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>CoffeeTypeName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;coffee&#34;</span>, <span style="color:#75715e">--Best to leave this, is what also prepends in DB, this can be treated as the &#34;machine type&#34; or &#34;machine name&#34; not to be confused with models.</span>
+</span></span><span style="display:flex;"><span>CoffeePrice <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, <span style="color:#75715e">-- Price of coffee per vend</span>
+</span></span><span style="display:flex;"><span>TeaPrice <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, <span style="color:#75715e">-- Price of tea per vend</span>
+</span></span><span style="display:flex;"><span>HotDrinksItemRefil <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hotdrinkpack&#34;</span>, <span style="color:#75715e">--Item Required to refill machine</span>
+</span></span><span style="display:flex;"><span>HotDrinksRefillBy <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, <span style="color:#75715e">-- how much to refill machines by</span>
+</span></span><span style="display:flex;"><span>HotDrinksRefilCost <span style="color:#f92672">=</span> <span style="color:#ae81ff">400</span>,  <span style="color:#75715e">--Cost of refills</span>
+</span></span><span style="display:flex;"><span>HotDrinksItemList <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;coffee&#34;</span>,<span style="color:#e6db74">&#34;tea&#34;</span>}, <span style="color:#75715e">-- must match what is in MachsVending table in database, </span>
+</span></span><span style="display:flex;"><span>RemoveHotRefilAmmount <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,  <span style="color:#75715e">--How many refill items to take per refill (not sure why you would want this anything other than 1 but the option is there)</span></span></span></code></pre></div><h4 id="props">Props</h4>
+<blockquote>
+<p>This is where you add additional target-able props</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">----Prop Inits</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">----This is where you can add props for any custom vending machines</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">----https://gta-objects.xyz/</span>
+</span></span><span style="display:flex;"><span>CoffeeVendingProps <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;prop_vend_coffe_01&#34;</span>,<span style="color:#e6db74">&#34;p_ld_coffee_vend_s&#34;</span>,<span style="color:#e6db74">&#34;p_ld_coffee_vend_01&#34;</span>}, <span style="color:#75715e">-- These are the props for the Coffee vending machines</span>
+</span></span><span style="display:flex;"><span>WaterVendingProps <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;prop_vend_water_01&#34;</span>,<span style="color:#e6db74">&#34;prop_watercooler_dark&#34;</span>,<span style="color:#e6db74">&#34;prop_watercooler&#34;</span>}, <span style="color:#75715e">-- Water</span>
+</span></span><span style="display:flex;"><span>SnackVendingProps <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;prop_vend_snak_01&#34;</span>,<span style="color:#e6db74">&#34;prop_vend_snak_01_tu&#34;</span>}, <span style="color:#75715e">-- Snakcs</span>
+</span></span><span style="display:flex;"><span>ColdDrinkVendingProps <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;prop_vend_soda_01&#34;</span>,<span style="color:#e6db74">&#34;prop_vend_soda_02&#34;</span>}, <span style="color:#75715e">-- Cold Drinks</span>
+</span></span><span style="display:flex;"><span>SlushPropList <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;prop_slush_dispenser&#34;</span>,<span style="color:#e6db74">&#34;prop_juice_dispenser&#34;</span>}, <span style="color:#75715e">-- Slush Machine and jucie</span></span></span></code></pre></div><h4 id="warehouse-and-stock">Warehouse and Stock</h4>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>BossPCLocation <span style="color:#f92672">=</span> vector3(<span style="color:#f92672">-</span><span style="color:#ae81ff">324.7753</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2775.9910</span>, <span style="color:#ae81ff">6.2698</span>), <span style="color:#75715e">--A Box target for the boss pc</span>
+</span></span><span style="display:flex;"><span>TruckSpawnPedModel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;s_m_m_dockwork_01&#34;</span>, <span style="color:#75715e">--The ped model to interact with for spawning truck</span>
+</span></span><span style="display:flex;"><span>TruckSpawnPed <span style="color:#f92672">=</span> {V <span style="color:#f92672">=</span> vector3(<span style="color:#f92672">-</span><span style="color:#ae81ff">316.5530</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2768.5164</span>, <span style="color:#ae81ff">4.9953</span>), H <span style="color:#f92672">=</span> <span style="color:#ae81ff">345.4404</span>}, <span style="color:#75715e">-- Location for the ped to spawn, V Must be a vector3 and H Is heading</span>
+</span></span><span style="display:flex;"><span>TruckSpawnLocation <span style="color:#f92672">=</span> {V <span style="color:#f92672">=</span> vector3(<span style="color:#f92672">-</span><span style="color:#ae81ff">329.2285</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2764.2124</span>, <span style="color:#ae81ff">5.0004</span>), H <span style="color:#f92672">=</span> <span style="color:#ae81ff">87.7528</span>}, <span style="color:#75715e">-- Location for the truck to spawn, V Must be a vector3 and H Is heading</span>
+</span></span><span style="display:flex;"><span>t1ger_keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">-- True if you use t1ger keys, this will give you the keys to the vech</span>
+</span></span><span style="display:flex;"><span>WarpIntoTruck <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">-- Should you warp the player into truck on spawn</span>
+</span></span><span style="display:flex;"><span>UseCustomPlate <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>,  <span style="color:#75715e">-- Use custom plate text for all trucks spawned?</span>
+</span></span><span style="display:flex;"><span>FallBackPlate <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sharks&#34;</span>, <span style="color:#75715e">-- Also &#34;customplate&#34; - Set this if you don&#39;t use t1ger_dealerships but do use t1ger_keys or you want a custom plate</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>StockPedModel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ig_chef2&#34;</span>, <span style="color:#75715e">-- the ped model for the stock ped</span>
+</span></span><span style="display:flex;"><span>StockPed <span style="color:#f92672">=</span> {V <span style="color:#f92672">=</span> vector3(<span style="color:#f92672">-</span><span style="color:#ae81ff">323.1447</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2784.1116</span>, <span style="color:#ae81ff">5.2070</span>), H <span style="color:#f92672">=</span> <span style="color:#ae81ff">106.4621</span>}, <span style="color:#75715e">-- Where the ped should spawn </span>
+</span></span><span style="display:flex;"><span>StockText <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Take Stock &#34;</span>, <span style="color:#75715e">-- Text shown when targeting</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">---Warehouse stock columns, these can be anything but MUST Match what is in the machsvendingwarehouse table</span>
+</span></span><span style="display:flex;"><span>StockColdDrinks <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;colddrinks&#34;</span>, <span style="color:#75715e">--this is the column name in the database that stores how many colddrink stock items there is </span>
+</span></span><span style="display:flex;"><span>StockHotDrinks <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hotdrinks&#34;</span>, <span style="color:#75715e">--this is the column name in the database that stores how many hotdrink stock items there is </span>
+</span></span><span style="display:flex;"><span>StockSnacks <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;snacks&#34;</span>, <span style="color:#75715e">--this is the column name in the database that stores how many snack stock items there is </span>
+</span></span><span style="display:flex;"><span>StockWater <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;water&#34;</span>, <span style="color:#75715e">--this is the column name in the database that stores how many water stock items there is </span>
+</span></span><span style="display:flex;"><span>StockDispenser <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dispenser&#34;</span>, <span style="color:#75715e">--this is the column name in the database that stores how many dispenser stock items there is </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>StockDelivered <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Stock is now in the Warehouse &#34;</span>, <span style="color:#75715e">--(item)</span>
+</span></span><span style="display:flex;"><span>NotEnoughStock <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;There is not enough stock&#34;</span>,
+</span></span><span style="display:flex;"><span>TakeOutStockText <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You have taken &#34;</span>, <span style="color:#75715e">-- Item, Ammmount </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>TruckA_Model <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;benson&#34;</span>, <span style="color:#75715e">--Truck 1 in the truck spawner, model namee</span>
+</span></span><span style="display:flex;"><span>TruckA_Text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Who Is Ben&#39;s Son?&#34;</span>, <span style="color:#75715e">-- Text for that</span>
+</span></span><span style="display:flex;"><span>TruckB_Model <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pounder&#34;</span>, <span style="color:#75715e">-- Truck 2</span>
+</span></span><span style="display:flex;"><span>TruckB_Text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Pound Me?&#34;</span>, <span style="color:#75715e">-- More text</span></span></span></code></pre></div><hr>
+<h3 id="functions">Functions</h3>
+<h4 id="client-functions">Client Functions</h4>
+<h5 id="getstreetname">GetStreetName</h5>
+<blockquote>
+<p>Pass a set of coords to this, it will then break the coords into xyz<br>
+it will then return the streetname, and cross street if there is one</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">GetStreetName</span>(coords)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> x,y,z <span style="color:#f92672">=</span> table.unpack(coords)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> streetName, crossing <span style="color:#f92672">=</span> GetStreetNameAtCoord(x, y, z)
+</span></span><span style="display:flex;"><span>  streetName <span style="color:#f92672">=</span> GetStreetNameFromHashKey(streetName)
+</span></span><span style="display:flex;"><span>  ClientDebugPrint(<span style="color:#e6db74">&#34;Cross &#34;</span><span style="color:#f92672">..</span>crossing)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> crossing <span style="color:#f92672">~=</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">and</span> crossing <span style="color:#f92672">~=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    crossing <span style="color:#f92672">=</span> GetStreetNameFromHashKey(crossing)
+</span></span><span style="display:flex;"><span>    message <span style="color:#f92672">=</span> streetName <span style="color:#f92672">..</span> <span style="color:#e6db74">&#34;_&#34;</span> <span style="color:#f92672">..</span> crossing
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    message <span style="color:#f92672">=</span> streetName
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> message
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="lockpick">LockPick()</h5>
+<blockquote>
+<p>This is where you add your lockpick script as a minigame, you will have to make it so the script will set GameWin to true, it didn&rsquo;t seem to like returning true and scripts such as utk were being weird with that as it is.
+if you wish to disable this, set NoMinigame to true in the config<br>
+make sure you set the other lockpick options to false
+if you don&rsquo;t want to have them use a lockpick make sure RequirePick is set to false</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">LockPick</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> Config.UseUTKualiDatacrack <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  TriggerEvent(<span style="color:#e6db74">&#34;datacrack:start&#34;</span>, <span style="color:#ae81ff">3</span>, <span style="color:#66d9ef">function</span>(result)
+</span></span><span style="display:flex;"><span>  ClientDebugPrint(<span style="color:#e6db74">&#34;rt Has Game Been Won &#34;</span><span style="color:#f92672">..</span>tostring(result))
+</span></span><span style="display:flex;"><span>  GameWin <span style="color:#f92672">=</span> result
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elseif</span> Config.CustomLock <span style="color:#66d9ef">then</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">------Set your lockpick script here / other minigame</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elseif</span> Config.NoMinigame <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  GameWin <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elseif</span> Config.UsebaguscodestudioLockpick <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  result <span style="color:#f92672">=</span> exports[<span style="color:#e6db74">&#39;lockpick&#39;</span>]:startLockpick(<span style="color:#ae81ff">1</span>) 
+</span></span><span style="display:flex;"><span>  GameWin <span style="color:#f92672">=</span> result
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="sendtextmessagemsg">SendTextMessage(msg)</h5>
+<blockquote>
+<p>This is where you can change notifications for the script, can be changed to whatever
+We use bulletin by default</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">SendTextMessage</span>(msg)
+</span></span><span style="display:flex;"><span>  exports.bulletin:SendWarning(msg, <span style="color:#ae81ff">5000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="buildvendnamecoordstype">BuildVendName(coords,type)</h5>
+<blockquote>
+<p>The vending machine names are based of its type and its location, you probably dont need to change this unless your database doesn&rsquo;t like &ldquo;_&rdquo;</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">BuildVendName</span>(coords,type)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> VendingName <span style="color:#f92672">=</span> type<span style="color:#f92672">..</span><span style="color:#e6db74">&#34;_&#34;</span><span style="color:#f92672">..</span>coords.x<span style="color:#f92672">..</span><span style="color:#e6db74">&#34;_&#34;</span><span style="color:#f92672">..</span>coords.y<span style="color:#f92672">..</span><span style="color:#e6db74">&#34;_&#34;</span><span style="color:#f92672">..</span>coords.z
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> VendingName
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="clientdebugprintmsg">ClientDebugPrint(msg)</h5>
+<blockquote>
+<p>This is how we do client side debugging, if you need to do weird stuff with debug messages you can do it here</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0"><code>function ClientDebugPrint(msg)
+  if Config.Debug == true then 
+    print(msg)
+  end
+end</code></pre></div><h5 id="roundn---also-in-server-side">round(n) - Also in server side</h5>
+<blockquote>
+<p>Simple rounding function, pass a number to it and it will round it</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">round</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> n <span style="color:#f92672">%</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">and</span> math.ceil(n) <span style="color:#f92672">or</span> math.floor(n)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="policealertcoordstype">PoliceAlert(coords,type)</h5>
+<blockquote>
+<p>This passes info through to whatever dispatch script of your choice, by default it uses core dispatch. The Cords and type (machine type ie &ldquo;coffee&rdquo;) would likley be enough,
+This fires as soon as someone presses the &ldquo;rob&rdquo; button, you may wish to add a citizen.wait(5000) to add a delay. do this the line before you trigger the alert</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">PoliceAlert</span>(coords,type)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> Config.PDNotify <span style="color:#66d9ef">then</span> 
+</span></span><span style="display:flex;"><span>streetName <span style="color:#f92672">=</span> GetStreetName(coords)
+</span></span><span style="display:flex;"><span>Message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Someone is trying to rob a &#34;</span><span style="color:#f92672">..</span>type<span style="color:#f92672">..</span><span style="color:#e6db74">&#34; machine at &#34;</span><span style="color:#f92672">..</span>streetName
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>TriggerServerEvent(<span style="color:#e6db74">&#34;core_dispatch:addMessage&#34;</span>,
+</span></span><span style="display:flex;"><span>Message,
+</span></span><span style="display:flex;"><span>    {coords[<span style="color:#ae81ff">1</span>], coords[<span style="color:#ae81ff">2</span>], coords[<span style="color:#ae81ff">3</span>]},
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;police&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">5000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">11</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h4 id="server-functions">Server Functions</h4>
+<h5 id="playerhasitemsourceitem">PlayerHasItem(source,item)</h5>
+<blockquote>
+<p>Checks if player has an item, change this if getInventoryItem(item) doesn&rsquo;t work for you</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">PlayerHasItem</span>(source,item)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> xPlayer <span style="color:#f92672">=</span> ESX.GetPlayerFromId(source)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> hasitem <span style="color:#f92672">=</span> xPlayer.getInventoryItem(item)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> hasitem.count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="additemsource-item-ammount--playerremoveitemsourceitemammount">AddItem(source, item, ammount) &amp; PlayerRemoveItem(source,item,ammount)</h5>
+<blockquote>
+<p>Change these if removeInventoryItem(item, ammount) and addInventoryItem(item, ammount) don&rsquo;t work in your server</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">AddItem</span>(source,item,ammount)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> xPlayer <span style="color:#f92672">=</span> ESX.GetPlayerFromId(source)
+</span></span><span style="display:flex;"><span>  xPlayer.addInventoryItem(item, ammount)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">PlayerRemoveItem</span>(source,item,ammount)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> xPlayer <span style="color:#f92672">=</span> ESX.GetPlayerFromId(source)
+</span></span><span style="display:flex;"><span>  xPlayer.removeInventoryItem(item, ammount)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="addplayercashsourcecash-removeplayercashsourceammount">AddPlayerCash(source,cash), RemovePlayerCash(source,ammount)</h5>
+<blockquote>
+<p>Change these if addMoney(cash) or removeMoney(ammount) don&rsquo;t work for you</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">AddPlayerCash</span>(source,cash)
+</span></span><span style="display:flex;"><span>  ServerDebugPrint(<span style="color:#e6db74">&#34;trying to add &#34;</span><span style="color:#f92672">..</span>cash<span style="color:#f92672">..</span><span style="color:#e6db74">&#34; to &#34;</span><span style="color:#f92672">..</span>source)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> xPlayer <span style="color:#f92672">=</span> ESX.GetPlayerFromId(source)
+</span></span><span style="display:flex;"><span>  xPlayer.addMoney(cash)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">RemovePlayerCash</span>(source,ammount)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> xPlayer <span style="color:#f92672">=</span> ESX.GetPlayerFromId(source)
+</span></span><span style="display:flex;"><span>  xPlayer.removeMoney(ammount)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h5 id="serverdebugprintmsg">ServerDebugPrint(msg)</h5>
+<blockquote>
+<p>This is how we do server side debugging, if you need to do weird stuff with debug messages you can do it here</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ServerDebugPrint</span>(msg)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> Config.Debug <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">then</span> 
+</span></span><span style="display:flex;"><span>    print(msg)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div><h3 id="adding-new-machine-type">Adding new machine type</h3>
+<h2 id="change-log">Change Log</h2>
+<h3 id="21-feb-23--v108">21 Feb 23 | v1.0.8</h3>
+<ul>
+<li>Crime - you can now steal money out of the machines</li>
+<li>Police Notify - Crimes notify police (well can be set up to)</li>
+<li>Hacking Minigame - Can integrate with UTK Datahack for hacking minigame, should be able to support any of them</li>
+</ul>
+<h4 id="v108-docs">v1.0.8 Docs</h4>
+<ul>
+<li>Crime, notify functions</li>
+<li>Added Change log</li>
+<li>Formatting and spelling</li>
+<li>Updated Requirements and features</li>
+<li>Removed PD notify and added tax removal to TODO</li>
+<li>Versions.txt update</li>
+</ul>
+<h3 id="19-feb-23--v107">19 Feb 23 | v1.0.7</h3>
+<ul>
+<li>Version Check added</li>
+<li>Test fix for &ldquo;all stock&rdquo; not showing</li>
+<li>Spicy Cola fixed (dang spelling)</li>
+<li>Added more coffee machine props, now includes some of the ones in offices</li>
+</ul>
+<h4 id="v107-docs">v1.0.7 Docs</h4>
+<ul>
+<li>Added Functions</li>
+<li>Added config info</li>
+<li>Updated TODO</li>
+<li>Formatting and spelling</li>
+<li>Versions.txt update</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

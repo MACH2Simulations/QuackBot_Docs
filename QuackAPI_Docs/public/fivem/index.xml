@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FiveM Scripts Docs And Versions on Quack Bot API Docs</title>
+    <link>http://localhost:1313/fivem/index.html</link>
+    <description>Recent content in FiveM Scripts Docs And Versions on Quack Bot API Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/fivem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Char API (Stream)</title>
+      <link>http://localhost:1313/fivem/api/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fivem/api/index.html</guid>
+      <description>We offer a free API to allow people to add there own Chat commands to a stream to pull info.
+NB; !Commands are suggestions / what (Mach) Uses,
+It doesn&amp;rsquo;t really matter how it gets fired, aslong as the right thing gets sent to the API
+This is NOT a chatbot, this is the baseline for a command that can be run from a chatbot&amp;hellip;
+!rp The Default repose is the help text</description>
+    </item>
+    <item>
+      <title>Lore</title>
+      <link>http://localhost:1313/fivem/fivemlore/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fivem/fivemlore/index.html</guid>
+      <description>The Lore Of The Server.</description>
+    </item>
+  </channel>
+</rss>

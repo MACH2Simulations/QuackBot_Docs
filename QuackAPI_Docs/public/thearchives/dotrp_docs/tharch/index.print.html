@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TH-Arch :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Town Hall Archives November 25 22 June 22">
+    <meta property="og:title" content="TH-Arch :: Quack Bot API Docs">
+    <meta property="og:description" content="Town Hall Archives November 25 22 June 22">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/dotrp_docs/tharch/index.html">
+    <meta property="article:section" content="DotRP Home (Archive) :: Quack Bot API Docs">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>TH-Arch :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/dotrp_docs/tharch/index.html" rel="canonical" type="text/html" title="TH-Arch :: Quack Bot API Docs">
+    <link href="/thearchives/dotrp_docs/tharch/index.xml" rel="alternate" type="application/rss+xml" title="TH-Arch :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/dotrp_docs/tharch/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/dotrp_docs/index.html"><span itemprop="name">DotRP Home (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">TH-Arch</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="th-arch">TH-Arch</h1>
+
+<h1 id="town-hall-archives">Town Hall Archives</h1>
+<h2 id="november-25">November 25</h2>
+<!-- raw HTML omitted -->
+<p><a href="https://drive.google.com/file/d/1OkO4tJqomeRsE9a8DpAfCGdB-qyZxZWi/view" target="_blank">22 June 22</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

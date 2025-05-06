@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HTTPS Does Not Mean Safe :: Quack Bot API Docs">
+    <meta name="twitter:description" content="APR 16, 2019
+This post was Spurred on by a discussion on website safety and how to teach young people how to tell if a website is safe. I Somewhat hyperbolically said no website is safe and that the green padlock / HTTPs basically means nothing. The longer version is a bit more complex than this and i will go into it in this post.
+What are the types of SSL Certificates?">
+    <meta property="og:title" content="HTTPS Does Not Mean Safe :: Quack Bot API Docs">
+    <meta property="og:description" content="APR 16, 2019
+This post was Spurred on by a discussion on website safety and how to teach young people how to tell if a website is safe. I Somewhat hyperbolically said no website is safe and that the green padlock / HTTPs basically means nothing. The longer version is a bit more complex than this and i will go into it in this post.
+What are the types of SSL Certificates?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/techguyblog/httpsnotmeansafe/index.html">
+    <meta property="article:section" content="Tech Guy Blog (Archive) :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2024-02-15T21:08:02+00:00">
+    <meta property="article:modified_time" content="2024-02-15T21:08:02+00:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>HTTPS Does Not Mean Safe :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/techguyblog/httpsnotmeansafe/index.html" rel="canonical" type="text/html" title="HTTPS Does Not Mean Safe :: Quack Bot API Docs">
+    <link href="/thearchives/techguyblog/httpsnotmeansafe/index.xml" rel="alternate" type="application/rss+xml" title="HTTPS Does Not Mean Safe :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/techguyblog/httpsnotmeansafe/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/techguyblog/index.html"><span itemprop="name">Tech Guy Blog (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">HTTPS Does Not Mean Safe</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="https-does-not-mean-safe">HTTPS Does Not Mean Safe</h1>
+
+<p>APR 16, 2019</p>
+<p><a href="#R-image-eb64e1aab679cd64ee6fb8a5791c2325" class="lightbox-link"><img src="/thearchives/techguyblog/httpsnotmeansafe/../../TechGuyBlog/images/ssl.png" alt="image" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb64e1aab679cd64ee6fb8a5791c2325"><img src="/thearchives/techguyblog/httpsnotmeansafe/../../TechGuyBlog/images/ssl.png" alt="image" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p>This post was Spurred on by a discussion on website safety and how to teach young people how to tell if a website is safe. I Somewhat hyperbolically said no website is safe and that the green padlock / HTTPs basically means nothing.
+The longer version is a bit more complex than this and i will go into it in this post.</p>
+<h2 id="what-are-the-types-of-ssl-certificates">What are the types of SSL Certificates?</h2>
+<p>This article (External Link) gives a more in depth explanation of each type of SSL Cert### DV – Domain Validation</p>
+<p>This is the most common certificate for sites such as this one, they’re usually shared certificates meaning that many sites can be using the same one and it means that the person who controls the webserver and the domain are the same person.</p>
+<h3 id="ov--organisation-validation">OV – Organisation Validation</h3>
+<p>The second most common, they are usually used by bigger corporations who have no need for EV, However they would like an extra amount of trust. The BBC Is an example of this. This shows that a specific company controls the server and the domain.</p>
+<h3 id="ev--extended-validation">EV – Extended Validation</h3>
+<p>This is the least common type, usually only use on sites where money or sensitive data is transmitted. Such as the natwest website. This is a significantly harder certificate to acquire as it requires a physical address among many other requirements for this to be issued. These are as secure as you can get.</p>
+<hr>
+<h2 id="so-what-does-the-green-padlock-mean">So what does the green padlock mean?</h2>
+<p>It usually means you are connected to a web server controlled by the same entity that controls the domain.</p>
+<hr>
+<p>So it’s secure right?
+Yes and no, Its secure in the sense of your web traffic between your device and the web server is encrypted and secure* but this does not mean that the website in itself is safe.</p>
+<p>*Many Corporate networks use their own trusted root certificate installed on the device which gets used to encrypt the network traffic, which then gets decrypted, filtered then re encrypted using the correct certificate sent to whatever server it should be going to then the reverse happens for everything returning. This also means that (in theory) anything that gets sent via the network (passwords. usernames, bank details etc) can be viewed in plain text. And an end user would not be able to tell the difference even when browsing a EV Site. – Important note! No IT person cares or has the time to go snooping on your data packets.<br>
+VPNS Also do this to hide and protect your web traffic.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7_-J_McbfbQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Note; The time changes due to the server not accounting for daylight savings</p>
+<hr>
+<h3 id="how-easy-is-it-to-get-the-green-padlock">How easy is it to get the green padlock</h3>
+<p>Less than the time to make a good coffee, see the video bellow. – Site used is totallypaypal.notreal.co.uk
+Interestingly it took me longer to write the paragraph above than give my fake site the green padlock (ignoring a weird glitch i had)</p>
+<hr>
+<h3 id="what-does-this-actually-mean-for-me">What does this actually mean for me?</h3>
+<p>If you are one a website such as online banking and it has the green bar / EV Cert, you are probably connected to your banks server and are as safe as the site is.
+And for everything else with the green padlock, you are probably connected to the server of the domain owner.</p>
+<h3 id="so-why-did-i-say-it-was-unsafe">So Why did i say it was unsafe</h3>
+<p>It gives a false sense of security, there has been millions of green padlocked sites that have been hacked. From sites similar to mine, to huge organisations such as Foxy Bingo and verifications.IO both of which had green padlocks.</p>
+<h2 id="tldr">TLDR;</h2>
+<p>A Green padlock only shows that your connection between your device and the server is secure. Not that the site is secure or legitimate. Avoiding (most) sites that do not use SSL (Especially those that you login to) is a good step in staying safe/er online. But is a tiny step in the greater scheme of things.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

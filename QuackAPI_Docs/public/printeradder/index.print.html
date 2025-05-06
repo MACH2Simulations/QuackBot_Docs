@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Print Adder V2 :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Download PrinterAddV2.exe is a command line Click to Run file that will programmatically readd printers served from a print server to a set value!
+This is useful for when group policy doesn&rsquo;t correctly add printers (which is a common issue with complicated, many or large GPOs) or if you want to have a shortcut to add many printers at once if you don&rsquo;t want to add printers via GPO.">
+    <meta property="og:title" content="Print Adder V2 :: Quack Bot API Docs">
+    <meta property="og:description" content="Download PrinterAddV2.exe is a command line Click to Run file that will programmatically readd printers served from a print server to a set value!
+This is useful for when group policy doesn&rsquo;t correctly add printers (which is a common issue with complicated, many or large GPOs) or if you want to have a shortcut to add many printers at once if you don&rsquo;t want to add printers via GPO.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/printeradder/index.html">
+    <meta property="article:section" content="QuackBot API :: Quack Bot API Docs">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>Print Adder V2 :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/printeradder/index.html" rel="canonical" type="text/html" title="Print Adder V2 :: Quack Bot API Docs">
+    <link href="/printeradder/index.xml" rel="alternate" type="application/rss+xml" title="Print Adder V2 :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/printeradder/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Print Adder V2</span><meta itemprop="position" content="1"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="print-adder-v2">Print Adder V2</h1>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#R-image-235497c3cbe967697520a4cd461c990d" class="lightbox-link"><img src="https://img.shields.io/github/last-commit/mach2simulations/PrinterAddV2/master" alt="GitHub last commit (branch)" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-235497c3cbe967697520a4cd461c990d"><img src="https://img.shields.io/github/last-commit/mach2simulations/PrinterAddV2/master" alt="GitHub last commit (branch)" class="lightbox-image border lightbox noshadow" loading="lazy"></a></td>
+<td><a href="#R-image-d8f2a9a482cddd5986409d47bf7af622" class="lightbox-link"><img src="https://img.shields.io/github/downloads/mach2simulations/PrinterAddV2/latest/total" alt="GitHub Downloads (all assets, latest release)" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d8f2a9a482cddd5986409d47bf7af622"><img src="https://img.shields.io/github/downloads/mach2simulations/PrinterAddV2/latest/total" alt="GitHub Downloads (all assets, latest release)" class="lightbox-image border lightbox noshadow" loading="lazy"></a></td>
+<td><a href="#R-image-7b47cd21d7a12910119a5db22f1f7b21" class="lightbox-link"><img src="https://img.shields.io/github/issues/mach2simulations/PrinterAddV2" alt="GitHub Issues or Pull Requests" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b47cd21d7a12910119a5db22f1f7b21"><img src="https://img.shields.io/github/issues/mach2simulations/PrinterAddV2" alt="GitHub Issues or Pull Requests" class="lightbox-image border lightbox noshadow" loading="lazy"></a></td>
+<td><a href="#R-image-3df5c1992dece119a6bfda8d4038caa3" class="lightbox-link"><img src="https://img.shields.io/github/issues-pr/mach2simulations/PrinterAddV2" alt="GitHub Issues or Pull Requests" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3df5c1992dece119a6bfda8d4038caa3"><img src="https://img.shields.io/github/issues-pr/mach2simulations/PrinterAddV2" alt="GitHub Issues or Pull Requests" class="lightbox-image border lightbox noshadow" loading="lazy"></a></td>
+<td><a href="#R-image-5729a8f9d6d4f368d704f077ec103be2" class="lightbox-link"><img src="https://img.shields.io/github/v/release/mach2simulations/PrinterAddV2" alt="GitHub Release" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5729a8f9d6d4f368d704f077ec103be2"><img src="https://img.shields.io/github/v/release/mach2simulations/PrinterAddV2" alt="GitHub Release" class="lightbox-image border lightbox noshadow" loading="lazy"></a></td>
+<td><a href="https://github.com/MACH2Simulations/PrinterAddV2/releases/latest" target="_blank">  Download</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>PrinterAddV2.exe is a command line Click to Run file that will programmatically readd printers served from a print server to a set value!<br>
+This is useful for when group policy doesn&rsquo;t correctly add printers (which is a common issue with complicated, many or large GPOs) or if you want to have a shortcut to add many printers at once if you don&rsquo;t want to add printers via GPO.<br>
+This can also delete all printers to get rid of the default stuff that windows creates (as it runs as the user running it they would need permissions to delete)</p>
+</blockquote>
+<h2 id="how-to-use">How To use</h2>
+<blockquote>
+<p>This shows it being ran from a CLI, this can be run as a startup program via GPO</p>
+</blockquote>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>PrinterAddV2.exe /qn /del <span style="color:#e6db74">&#34;/s m2s-print1&#34;</span> <span style="color:#e6db74">&#34;/p Office-Mono Office-Colour Reception-Direct&#34;</span> <span style="color:#e6db74">&#34;/t 10&#34;</span> </span></span></code></pre></div><p>/qn or /q - Should this run quietly, nothing shown to the user. (Optional)<br>
+/del - Should it delete all the printers before adding the new ones. (Optional)<br>
+/delonly - Should be the only arg passed, will only delete printers. (Optional)<br>
+&ldquo;/s &lt;PrintServer&gt;&rdquo; - Must be contained in quotes, printer server should be plain ie MY-Server, do not add \\ etc  - This should work with an IP.<br>
+&ldquo;/p &lt;Printer1&gt; &lt;Printer2&gt;&rdquo; - Space Separated list of printers, should match the Queue/Share name from the print server<br>
+&ldquo;/t 10&rdquo; - Must be contained in quotes, how many times will it try to add the printer. Once is <em><strong>normally</strong></em> enough, but the default is 5. (Optional)</p>
+<p><a href="#R-image-9c69af1f3a03420e0fba4dbad41249ad" class="lightbox-link"><img src="/printeradder/../../PrintAdderV2.png" alt="Print Adder V2 - A Gui With a progress bar and status info" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c69af1f3a03420e0fba4dbad41249ad"><img src="/printeradder/../../PrintAdderV2.png" alt="Print Adder V2 - A Gui With a progress bar and status info" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h2 id="change-log">Change Log</h2>
+<h3 id="11">1.1</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Added Del Only  
+</span></span><span style="display:flex;"><span>Started to add dark mode  </span></span></code></pre></div><h3 id="10---initial-build">1.0 - Initial Build</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>First Working Build
+</span></span><span style="display:flex;"><span>Can Deploy
+</span></span><span style="display:flex;"><span>Can Delete
+</span></span><span style="display:flex;"><span>Added Extra args for Quite </span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "QuackBot API v2",
+    "description": "Useful Toys for Twitch streams \n\nNOTE: V2 Is Slowly being Deprecated, the plan is 100% V3 would have 100% Syntax compatibilty so its only a URL Update                                                      ",
+    "contact": {
+      "name": "MACH 2 Simulations",
+      "url": "https://thegatewaytoanewworld.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.m2s.bz/api/",
+      "description": "New Server 2"
+    }
+  ],
+  "tags": [
+    {
+      "name": "V2 Active",
+      "description": "V2 Endpoints Not Deprecated"
+    },
+    {
+      "name": "V2 Deprecated",
+      "description": "Old Endpoints, now disabled"
+    }
+  ],
+  "paths": {
+    "/Cipher": {
+      "get": {
+        "tags": [
+          "V2 Active"
+        ],
+        "summary": "Generates A Cipher",
+        "description": "On a get request returns a \"Cipher\" key:  \n\nObviously not to be used for any actual Cipher/Password                                                    \n",
+        "operationId": "MakeCipher",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "API Key",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Length",
+            "in": "query",
+            "description": "Length of Returned Key",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "maximum": 300,
+              "minimum": 5,
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "fghjkuhygtfrdcvxfgbthyffredwsazxdcfr"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          },
+          "401": {
+            "description": "Missing API Key / Pramas"
+          }
+        }
+      }
+    },
+    "/Define": {
+      "get": {
+        "tags": [
+          "V2 Active"
+        ],
+        "summary": "Gets the Dictionary Definition of a word",
+        "description": "Interacts With the Oxford Dictionary API To return the Definition of a word.\n\nThis is API To another API\n",
+        "operationId": "GetWords",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "API Key",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "word",
+            "in": "query",
+            "description": "The word you want Defined",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "From the Oxford Dictionary: bark is Defined as, the sharp explosive cry of a dog, fox <truncated for docs.>"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          },
+          "401": {
+            "description": "Missing API Key / Pramas"
+          },
+          "default": {
+            "description": "No Word Passed",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "From the Oxford Dictionary:  is Defined as,   See Also: Etymologies;  "
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Weather": {
+      "get": {
+        "tags": [
+          "V2 Active"
+        ],
+        "summary": "Gets the Weather in a given city",
+        "description": "Gets the weather in a given city.  \n\nUsing the openweathermap API  \nOptional Return location masking, \n",
+        "operationId": "GetWeather",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "API Key",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "City",
+            "in": "query",
+            "description": "The City you want to get weather for.",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "London"
+            }
+          },
+          {
+            "name": "Rep",
+            "in": "query",
+            "description": "The City you want to return the location as.",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "Chulak"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "The Weather in London | Rain (moderate rain) | 10.1 C (50.18 F) [283.25 K] | Humidity 94% | Wind 3.6 M/S (8.05 MPH) [12.96 KPH] @ 170 Deg"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          },
+          "401": {
+            "description": "Missing API Key / Pramas"
+          },
+          "x-*": {
+            "description": "Success Using Rep",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "The Weather in Chulak | Rain (moderate rain) | 10.1 C (50.18 F) [283.25 K] | Humidity 94% | Wind 3.6 M/S (8.05 MPH) [12.96 KPH] @ 170 Deg"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Backblaze (Cloudbackup) :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Disclaimer / full discourse: By Using the referral link at the bottom of this post,
+or in the footer, i gain a months free backup.
+DO YOU BACK UP YOUR $SYSTEMS? IF NOT GO DO IT NOW.
+IF YOU DO DOES YOUR BACK UP WORK? WHEN DID IT LAST RUN?
+IS IT WORKING AND RUNNING AS SCHEDULED? THEN TEST THE BACK UP!
+THE BACKUP WORKS? GOOD, NOW GET A FALL BACK.">
+    <meta property="og:title" content="Backblaze (Cloudbackup) :: Quack Bot API Docs">
+    <meta property="og:description" content="Disclaimer / full discourse: By Using the referral link at the bottom of this post,
+or in the footer, i gain a months free backup.
+DO YOU BACK UP YOUR $SYSTEMS? IF NOT GO DO IT NOW.
+IF YOU DO DOES YOUR BACK UP WORK? WHEN DID IT LAST RUN?
+IS IT WORKING AND RUNNING AS SCHEDULED? THEN TEST THE BACK UP!
+THE BACKUP WORKS? GOOD, NOW GET A FALL BACK.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/techguyblog/backblaze/index.html">
+    <meta property="article:section" content="Tech Guy Blog (Archive) :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2018-02-03T14:44:49+00:00">
+    <meta property="article:modified_time" content="2018-02-03T14:44:49+00:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>Backblaze (Cloudbackup) :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/techguyblog/backblaze/index.html" rel="canonical" type="text/html" title="Backblaze (Cloudbackup) :: Quack Bot API Docs">
+    <link href="/thearchives/techguyblog/backblaze/index.xml" rel="alternate" type="application/rss+xml" title="Backblaze (Cloudbackup) :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/techguyblog/backblaze/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/techguyblog/index.html"><span itemprop="name">Tech Guy Blog (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Backblaze (Cloudbackup)</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="backblaze-cloudbackup">Backblaze (Cloudbackup)</h1>
+
+<p>Disclaimer / full discourse: By Using the referral link at the bottom of this post,<br>
+or in the footer, i gain a months free backup.<br>
+<a href="https://secure.backblaze.com/r/019dif" target="_blank"><a href="#R-image-0fc4462621088710edd17d177dd6a7ac" class="lightbox-link"><img src="/thearchives/techguyblog/backblaze/../../TechGuyBlog/images/why-lose-memories-250x250.jpg" alt="Why loose memories" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fc4462621088710edd17d177dd6a7ac"><img src="/thearchives/techguyblog/backblaze/../../TechGuyBlog/images/why-lose-memories-250x250.jpg" alt="Why loose memories" class="lightbox-image border lightbox noshadow" loading="lazy"></a></a></p>
+<p>DO YOU BACK UP YOUR $SYSTEMS? IF NOT GO DO IT NOW.<br>
+IF YOU DO DOES YOUR BACK UP WORK? WHEN DID IT LAST RUN?<br>
+IS IT WORKING AND RUNNING AS SCHEDULED? THEN TEST THE BACK UP!<br>
+THE BACKUP WORKS? GOOD, NOW GET A FALL BACK.</p>
+<p>Now the shouty bits over, to the post.</p>
+<p>Something every IT professional should know, and that they should tell everyone they know is that you need to be backing up your stuff, regularly and you should check its working regularly and you should test it regularly.</p>
+<p>Many people suggest <strong>AT LEAST</strong> 3 levels of backup</p>
+<p>L1: Local on machine backup – Such as version control, Having previous versions turned on on windows, Having multiple copies of the same file on your PC (ZIP Archives can help with reducing size) and something like a RAID Setup (Note RAID Is for redundancy in case of drive failure, it will not help you if you delete or edit files)</p>
+<p>L2: Local (Site) Backup – This is when you have a backup of the system on an external drive, but is still kept in the same room / building / address as the machine it is a backup of. These can include; Memory sticks, External Hard Drives, Tape Drives, Disks (DVD / Blue-ray), on another machine and anything similar that i have missed.</p>
+<p>L3: Offsite Backup – As above, but the storage mediums are taken offsite and stored securely (Note Make sure you comply with local privacy laws)</p>
+<p>L3: Offsite Backup (Cloud) – This is where Backblaze comes in, it is a Cloud based backup software, for $6 a month. Install it, turn it on and leave it backing up (Note it may take a couple of months to back up your things even with a high speed connection). It is pretty much set up and leave it be (assuming you test it and make sure it is working). They a similar service for small business and server / NAS Backups, however it is slightly more expensive.</p>
+<p>TL;DR Its cheep, easy to use and is a good backup service, Click the link bellow to get a free month ( and i get free months when you buy too)</p>
+<p><a href="https://secure.backblaze.com/r/019dif" target="_blank">BACKBLAZE</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

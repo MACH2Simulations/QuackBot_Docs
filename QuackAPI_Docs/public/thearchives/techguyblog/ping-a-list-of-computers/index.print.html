@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ping a list of computers :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Script a week 00000100
+This Script is to ping a list of computers with a Certain name
+####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018 ####Tested on PS 5.0 AND 6.0 ####The script below will allow you ping computers with a certain name ####Or with a certain naming convention $compname = read-host &#34;Enter computname Do not include * For wild card. it is added automactily: IE PCNAME&#34; $computers = Get-ADComputer -Filter &#34;Name -like &#39;$compname*&#39;&#34; | select-object -expandproperty name ForEach ($computer in $computers)` { ping $computer }PS Version – Test on 5.">
+    <meta property="og:title" content="Ping a list of computers :: Quack Bot API Docs">
+    <meta property="og:description" content="Script a week 00000100
+This Script is to ping a list of computers with a Certain name
+####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018 ####Tested on PS 5.0 AND 6.0 ####The script below will allow you ping computers with a certain name ####Or with a certain naming convention $compname = read-host &#34;Enter computname Do not include * For wild card. it is added automactily: IE PCNAME&#34; $computers = Get-ADComputer -Filter &#34;Name -like &#39;$compname*&#39;&#34; | select-object -expandproperty name ForEach ($computer in $computers)` { ping $computer }PS Version – Test on 5.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/techguyblog/ping-a-list-of-computers/index.html">
+    <meta property="article:section" content="Tech Guy Blog (Archive) :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2018-03-07T21:53:35+00:00">
+    <meta property="article:modified_time" content="2018-03-07T21:53:35+00:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>Ping a list of computers :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/techguyblog/ping-a-list-of-computers/index.html" rel="canonical" type="text/html" title="Ping a list of computers :: Quack Bot API Docs">
+    <link href="/thearchives/techguyblog/ping-a-list-of-computers/index.xml" rel="alternate" type="application/rss+xml" title="Ping a list of computers :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/techguyblog/ping-a-list-of-computers/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/techguyblog/index.html"><span itemprop="name">Tech Guy Blog (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ping a list of computers</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="ping-a-list-of-computers">Ping a list of computers</h1>
+
+<p>Script a week 00000100<br>
+This Script is to ping a list of computers with a Certain name</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">####Tested on PS 5.0 AND 6.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">####The script below will allow you ping computers with a certain name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">####Or with a certain naming convention </span>
+</span></span><span style="display:flex;"><span>$compname = read-host <span style="color:#e6db74">&#34;Enter computname Do not include * For wild card. it is added automactily: IE PCNAME&#34;</span>
+</span></span><span style="display:flex;"><span>$computers = Get-ADComputer -Filter <span style="color:#e6db74">&#34;Name -like &#39;</span>$compname<span style="color:#e6db74">*&#39;&#34;</span> | 
+</span></span><span style="display:flex;"><span>select-object -expandproperty name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ForEach</span> ($computer <span style="color:#66d9ef">in</span> $computers)`
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  ping $computer
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p><strong>PS Version</strong> – Test on 5.0 &amp; 6.0<br>
+<strong>OS</strong> – Tested on Windows 7 &amp; Windows 10, with the script being run on a windows 10 machine<br>
+<strong>Administrative Credentials required</strong> – Yes<br>
+<strong>Changes needed?</strong> – Modifying comments to suit your org needs</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

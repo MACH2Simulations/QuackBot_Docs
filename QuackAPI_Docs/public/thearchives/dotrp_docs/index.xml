@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DotRP Home (Archive) on Quack Bot API Docs</title>
+    <link>http://localhost:1313/thearchives/dotrp_docs/index.html</link>
+    <description>Recent content in DotRP Home (Archive) on Quack Bot API Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/thearchives/dotrp_docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> MACH &amp; ONYX FiveM Functions</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/machravenfun/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/machravenfun/index.html</guid>
+      <description>TODO NORMAL BLIPS in blip function
+Usable items This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be IN THE DATABASE.
+ESX.RegisterUsableItem(&amp;#39;fishbait&amp;#39;, function(source) //fishbait db item name local xPlayer = ESX.GetPlayerFromId(source) xPlayer.removeInventoryItem(&amp;#39;fishbait&amp;#39;, 1) //fishbait is item name in db TriggerClientEvent(&amp;#39;esx_status:add&amp;#39;, source, &amp;#39;hunger&amp;#39;, 8000) //fill food TriggerClientEvent(&amp;#39;esx_basicneeds:onEat&amp;#39;, source) TriggerClientEvent(&amp;#39;esx:showNotification&amp;#39;, source, _U(&amp;#39;used_fishbait&amp;#39;)) //used_fishbait (for translations) end) Head to the useable items section in the cfg file.</description>
+    </item>
+    <item>
+      <title>Core Gunparts SQL</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/coregunparts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/coregunparts/index.html</guid>
+      <description>Thanks to Grnphnx#9071 in discord!
+&amp;ndash; Refrenced here https://wiki.rage.mp/index.php?title=Weapons_Components#Assault_Rifle
+&amp;ndash; Here is a template &amp;ndash; (&amp;rsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;1&amp;rsquo;, &amp;lsquo;0&amp;rsquo;, &amp;lsquo;1&amp;rsquo;, &amp;lsquo;2&amp;rsquo;,&amp;lsquo;2&amp;rsquo;, &amp;lsquo;&amp;rsquo;, NULL, &amp;lsquo;&amp;rsquo;, NULL, NULL, &amp;lsquo;Attachment component&amp;rsquo;), &amp;ndash; Remember the last line does not need a comma at the end. &amp;ndash; First blank space is the item name you will put for your stores or through command&amp;hellip; i.e. /giveitem 1 pistol_flashlight 1 &amp;ndash; Second blank is the label for the item so it will say &amp;ldquo;you purchased 1 Pistol Flashlight&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Core_Crafting</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/corecraft/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/corecraft/index.html</guid>
+      <description>This is how you add items to core_crafting!
+#FOR ESX
+Adding Items to the Database. First you need to add all the items you want to use to the Database, a good way of doing this is in a CSV File! ITEMS.CSV
+name label weight rare can_remove degrade_modifier unique description x y category The name of the item, always lowercase, no spaces or spec chars How you want it to be displayed in inventory a weight (0 if using core inventory) Always 0 Always 1 Best set to 1 Always 0 opt discription Core inventroy Size Core inventory category drink_flaming_slater Flaming Slater 0 0 1 1 0 Boom Peepo Drunk 1 1 drinks For images the must match the name and be placed it the inventory&amp;rsquo;s picture location.</description>
+    </item>
+    <item>
+      <title>Core_Inventory / Core_Clothing</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/core/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/core/index.html</guid>
+      <description>The stuff we have learnt trying to get these working.
+FOR ESX Note; You might not Need core_weapons if you have Core_Inventory
+Thanks to all the CORE staff &amp;amp; discord members (esp Grnphnx for the bits of code i have found to build this)
+As per CORE documentaions do the following
+ADD/REPLACE THESE FUNCTIONS IN es_extended/server/classes/player.lua
+function self.getInventory(minimal, inventory)inventory = inventory or &amp;#39;content-&amp;#39; .. self.identifier:gsub(&amp;#34;:&amp;#34;, &amp;#34;&amp;#34;)return exports[&amp;#39;core_inventory&amp;#39;]:getInventory(inventory)endfunction self.</description>
+    </item>
+    <item>
+      <title>cut</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/cut/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/cut/index.html</guid>
+      <description>Cut We use the phrase “cut” in dotRP, this is a way to stop incidents that are making people feel uncomfortable, in some cases stop / pause a scenario and get things back on track or the most common&amp;hellip; to debrief after something has reached its logical conclusion.
+ANY Character involved in a situation can call cut, when this occurs ALL players taking part in the current situation must stop and honour the cut.</description>
+    </item>
+    <item>
+      <title>dotRP Dev Documentation</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/changes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/changes/index.html</guid>
+      <description>18 Sept 2022 This list is from over many weeks
+Ox doorlock updates
+New Cad
+Ammo boxes Added
+dotRPFunctions, changed names because lincenes
+cars added
+bike Dealer New arms dealer (theres now two)</description>
+    </item>
+    <item>
+      <title>dotRP Dev Documentation</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/machschaos/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/machschaos/index.html</guid>
+      <description>MACHS BRAIN ON GTA Turn off all cars so people have to work
+The october event
+All the storm shit i can do
+RCAS attack
+Repaer Reaping
+Triathalon
+Ashes Brain on GTA Purge Many more i have forgot</description>
+    </item>
+    <item>
+      <title>dotRP-ERS-Flight</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/flight/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/flight/index.html</guid>
+      <description>dotRP ERS (SAPD + SAFR + CITY) | Flight Training Flight Training Due to number reasons, ALL persons wishing to be flight certified will be cross trained for both LSPD And LSFR Flight operations.
+They must also be competent in non-flight operations before being allowed to fly
+This allows us to have Air support more often, as it takes 1/2 people from a ground unit to have a multi role AC up, that it would just having each Dept run its own.</description>
+    </item>
+    <item>
+      <title>dotRP-ERS-Main</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/ersindex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/ersindex/index.html</guid>
+      <description>dotRP ERS (SAPD + SAFR + CITY) Police Procedures
+IT IS CURRENTLY A SERVER RULE THAT NO DIRTY COP RP IS ALLOWED
+ERS Or Emergency Response Service. This is the overarching name when talking about the Emergency services within the city, as one big group, rather than indunvidual departments. This would also include city services such as the road team.
+This Section covers any sort of cross agency work, however, mainly applies major incident response, rather than day to day things such as car crashes.</description>
+    </item>
+    <item>
+      <title>dotRP-ERS-SAPD-COE</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/police/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/police/index.html</guid>
+      <description>dotRP ERS (SAPD + SAFR + CITY) | Procedures Shifts 1st Shift: 10am - 3pm EST
+2nd Shift: 3pm - 9pm EST
+3rd Shift: 9pm - 2am EST
+At 15 minutes past the beginning of each shift, all officers on duty shall muster for a headcount and briefing before leaving for patrol.
+Manual THE MEANING OF YOUR OATH
+CODE OF ETHICS
+CODE OF CONDUCT
+ARREST &amp;amp; DETAINMENT POLICIES
+MIRANDA RIGHTS</description>
+    </item>
+    <item>
+      <title>dotRP-Lore</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/lore/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/lore/index.html</guid>
+      <description>dotRP City Lore THE HISTORY OF LOS SANTOS 1 The City of the Saints
+El Pueblo de Los Santos (The city of the Saints) was officially founded June 23rd 1869. The settlement was part of Spania’s colonization during the Sheep Jesus (Oveja de Cristo) Crusades of the 1860s. According to historians the pueblo was part of a three-part plan to colonize San Andreas. According to Historians settlers would build “a string of religious missions to convert the indigenous peoples into Spanish subjects, presidios to secure Spania’s military hold on the province, and pueblos to supply the garrisons with food and establish a secular, civilian presence in the territory.</description>
+    </item>
+    <item>
+      <title>MACH &amp; ONYX FiveM Functions</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/dbitems/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/dbitems/index.html</guid>
+      <description>#FOR ESX
+Adding Items to the Database. First you need to add all the items you want to use to the Database, a good way of doing this is in a CSV File! ITEMS.CSV
+name label weight rare can_remove degrade_modifier unique description x y category The name of the item, always lowercase, no spaces or spec chars How you want it to be displayed in inventory a weight (0 if using core inventory) Always 0 Always 1 Best set to 1 Always 0 opt discription Core inventroy Size Core inventory category drink_flaming_slater Flaming Slater 0 0 1 1 0 Boom Peepo Drunk 1 1 drinks For images the must match the name and be placed it the inventory&amp;rsquo;s picture location.</description>
+    </item>
+    <item>
+      <title>MACH-Raven-Functions</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/mrfunctions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/mrfunctions/index.html</guid>
+      <description>MACH &amp;amp; Raven Functions Please read our Documentation For help with configuration
+Discord Rich Presence STANDALONE
+This allows you to set the following in discord to show when players are playing on the server.
+You must have a discord application set up as per the docs here
+Hands Up Put Yer hands up, custom keybind, not much more to say! No docs for this one, you can change a letter</description>
+    </item>
+    <item>
+      <title>MachsVedning</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/machsvending/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/machsvending/index.html</guid>
+      <description>Machs Vending [ESX] UNDER CONSTRUCTION Please read our Documentation For help with configuration
+Get it on tebex - TODO - NOT YET FOR SALE
+Description Introducing Machs Vending, a ESX Based job script for FiveM! This script is perfect for those looking to add more dynamic and interactive jobs to their servers.
+Using QTarget* you can now offer your players the opportunity to become Vending Machine Operators, interacting with customers and restocking machines throughout the city.</description>
+    </item>
+    <item>
+      <title>Patch Notes</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/patchnotes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/patchnotes/index.html</guid>
+      <description>Doorlock — 08/15/2022
+Hey @everyone,We just pushed a v1.5.0 release for ox_doorlock of which some main changes are:- UI rewrite and redesign- Ability to see and search all registered doors in a table- Ability to easily copy and apply door settings- Easily edit or remove any door from the doors table- Removed /doorlock edit and added /doorlock closest which opens the settings for the closest doorYou can see how the new UI looks here:https://imgur.</description>
+    </item>
+    <item>
+      <title>Prometheus Heavy Industries</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/prhi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/prhi/index.html</guid>
+      <description>Located at Maze bank tower (west) on prosperity.
+PHI Acquires Slater Group, Slater Heavy Industries, RRI And Hammerhead armaments Jan 2023 Prometheus Heavy Industries proudly announces the acquisition of Slater Group, Slater Heavy Industries, RRI And Hammerhead armaments.
+This brings the following companies under the one banner and proprietor (Slater Smith). This multi-billion-dollar enterprise contains.
+Formally under Slater Group Slaters Catcafe Location: Little Seoul.
+A Small Cafe with cute cats allowed to roam the property and interact with the customers.</description>
+    </item>
+    <item>
+      <title>snippets</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/snippets/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/snippets/index.html</guid>
+      <description>Snippets #FOR ESX
+https://github.com/esx-framework/esx-legacy/blob/26743c5417a81b0d62fcc61db5b835b36f1045bb/%5Besx%5D/es_extended/server/classes/player.lua#L68 round.
+to find someone&amp;rsquo;s backpack: find their ID in select identifier from users where firstname = &amp;lsquo;usersfirstname&amp;rsquo; - find their inventory in select data from inventories where identifier = &amp;rsquo;thatidentifier&amp;rsquo; - in the json, find the backpack and it has an itemId field. - find the backpack select data from inventories where identifier = &amp;lsquo;backpack_itemId&amp;rsquo;
+tail the fx/fivem server log (in powershell): Get-Content -tail 50 -wait E:/live/txdata/default/logs/fxserver.</description>
+    </item>
+    <item>
+      <title>TH-Arch</title>
+      <link>http://localhost:1313/thearchives/dotrp_docs/tharch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thearchives/dotrp_docs/tharch/index.html</guid>
+      <description>Town Hall Archives November 25 22 June 22</description>
+    </item>
+  </channel>
+</rss>

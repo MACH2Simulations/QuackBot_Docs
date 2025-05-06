@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="House Cleaning :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Script a week
+This POTENTIALLY DESTRUCTIVE SCRIPT
+Removes all Windows 10 apps, various junkie files from the c drive then cleans up the system image
+####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018 ####Tested on PS 5.0 AND Should work on 6.0 #### POTENTIALLY DESTRUCTIVE SCRIPT #### THIS SCRIPT ALSO REMOVES ALL WIN 10 APPS #### This script removes various files from the C drive of windows machines #### It Then cleans up the system install image #region date Get-AppxPackage -allusers | Remove-AppxPackage #### $min = Get-Date &#39;08:00&#39; $max = Get-Date &#39;17:30&#39; $now = Get-Date #endregion #region clean Remove-Item -path c:\temp\ -Recurse -Force Remove-Item c:\users\* -Force Remove-Item -path c:\windows\temp\ -Recurse -Force Remove-Item -path c:\windows.">
+    <meta property="og:title" content="House Cleaning :: Quack Bot API Docs">
+    <meta property="og:description" content="Script a week
+This POTENTIALLY DESTRUCTIVE SCRIPT
+Removes all Windows 10 apps, various junkie files from the c drive then cleans up the system image
+####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018 ####Tested on PS 5.0 AND Should work on 6.0 #### POTENTIALLY DESTRUCTIVE SCRIPT #### THIS SCRIPT ALSO REMOVES ALL WIN 10 APPS #### This script removes various files from the C drive of windows machines #### It Then cleans up the system install image #region date Get-AppxPackage -allusers | Remove-AppxPackage #### $min = Get-Date &#39;08:00&#39; $max = Get-Date &#39;17:30&#39; $now = Get-Date #endregion #region clean Remove-Item -path c:\temp\ -Recurse -Force Remove-Item c:\users\* -Force Remove-Item -path c:\windows\temp\ -Recurse -Force Remove-Item -path c:\windows.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/techguyblog/house-cleaning/index.html">
+    <meta property="article:section" content="Tech Guy Blog (Archive) :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2018-03-25T15:16:11+00:00">
+    <meta property="article:modified_time" content="2018-03-25T15:16:11+00:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>House Cleaning :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/techguyblog/house-cleaning/index.html" rel="canonical" type="text/html" title="House Cleaning :: Quack Bot API Docs">
+    <link href="/thearchives/techguyblog/house-cleaning/index.xml" rel="alternate" type="application/rss+xml" title="House Cleaning :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/techguyblog/house-cleaning/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/techguyblog/index.html"><span itemprop="name">Tech Guy Blog (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">House Cleaning</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="house-cleaning">House Cleaning</h1>
+
+<p>Script a week<br>
+This POTENTIALLY DESTRUCTIVE SCRIPT<br>
+Removes all Windows 10 apps, various junkie files from the c drive then cleans up the system image</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">####Script by Chris of TECHGUYBLOG.CO.UK (C) 2018</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">####Tested on PS 5.0 AND Should work on 6.0 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">####  POTENTIALLY DESTRUCTIVE SCRIPT </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### THIS SCRIPT ALSO REMOVES ALL WIN 10 APPS </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### This script removes various files from the C drive of windows machines</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### It Then cleans up the system install image </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#region date</span>
+</span></span><span style="display:flex;"><span>Get-AppxPackage -allusers | Remove-AppxPackage <span style="color:#75715e">####</span>
+</span></span><span style="display:flex;"><span>$min = Get-Date <span style="color:#e6db74">&#39;08:00&#39;</span>
+</span></span><span style="display:flex;"><span>$max = Get-Date <span style="color:#e6db74">&#39;17:30&#39;</span>
+</span></span><span style="display:flex;"><span>$now = Get-Date
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endregion</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#region clean</span>
+</span></span><span style="display:flex;"><span>Remove-Item -path c:\temp\ -Recurse -Force
+</span></span><span style="display:flex;"><span>Remove-Item  c:\users\* -Force
+</span></span><span style="display:flex;"><span>Remove-Item -path c:\windows\temp\ -Recurse -Force
+</span></span><span style="display:flex;"><span>Remove-Item -path c:\windows.old\ -Recurse -Force
+</span></span><span style="display:flex;"><span>Remove-Item -path <span style="color:#e6db74">&#34;c:\windows\Software Distribution.old\&#34;</span> -Recurse -Force
+</span></span><span style="display:flex;"><span>Remove-item -path <span style="color:#e6db74">&#34;C:\Windows\ServiceProfiles\LocalService\AppData\Local\FontCache\&#34;</span> -Include FontCache-S-*.dat -Recurse -Force
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endregion</span>
+</span></span><span style="display:flex;"><span>Remove-Item  c:\windows.old\ -Force
+</span></span><span style="display:flex;"><span>Remove-Item <span style="color:#e6db74">&#34;c:\windows\Software Distribution.old\&#34;</span> -Force
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endregion </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#region CHECK FOR TIME, THEN REMOVE OLD IMAGES</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (((!($min.TimeOfDay <span style="color:#f92672">-le</span> $now.TimeOfDay <span style="color:#f92672">-and</span> $max.TimeOfDay <span style="color:#f92672">-ge</span> $now.TimeOfDay))) 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Dism.exe /online /Cleanup-Image /StartComponentCleanup <span style="color:#75715e">## cleans up image</span>
+</span></span><span style="display:flex;"><span>    Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase <span style="color:#75715e">##This gets rid of superseded windows images</span>
+</span></span><span style="display:flex;"><span>    Dism.exe /online /Cleanup-Image /SPSuperseded <span style="color:#75715e">##More old superseded stuff removal</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    msg * <span style="color:#e6db74">&#34;Cleanup Ran&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elseif</span> ($min.TimeOfDay <span style="color:#f92672">-le</span> $now.TimeOfDay <span style="color:#f92672">-and</span> $max.TimeOfDay <span style="color:#f92672">-ge</span> $now.TimeOfDay)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        msg * <span style="color:#e6db74">&#34;not run due to time&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>{ 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#DO NOTHING</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endregion</span>
+</span></span><span style="display:flex;"><span>Clear-RecycleBin -Force
+</span></span><span style="display:flex;"><span>gpupdate /force
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##End Of House Cleaning Files</span></span></span></code></pre></div><p><strong>WARNING</strong> – POTENTIALLY DESTRUCTIVE SCRIPT</p>
+<p><strong>PS Version</strong> – Test on 5.0 Should work on 6.0<br>
+<strong>OS</strong> – Script test on windows 10 – some dir changes may be required on older OS’<br>
+<strong>Administrative Credentials required</strong> – Yes<br>
+<strong>Changes needed?</strong> – Optional to remove the line that removes all win 1- apps and add or remove directory deletions</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

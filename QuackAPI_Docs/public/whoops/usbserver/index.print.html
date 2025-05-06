@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(Noodle) USB File Server Deletion :: Quack Bot API Docs">
+    <meta name="twitter:description" content="(nothing to do with viruses/crypto)
+An important precursor to this is that Noodle was responsible for the backups. We used tape backups at the time: go into server room, shove in tape, check next day on the console it was ok, weekly restore test. There was gaps of over a month at times.
+They kept &ldquo;Forgetting&rdquo;
+And, we regularly went to \\server\F$ to access things from the servers.
+I&rsquo;m not sure if I had just had a couple of days off for a reason, or if I Had been ill or whatever, but I Came into the backlash of this.">
+    <meta property="og:title" content="(Noodle) USB File Server Deletion :: Quack Bot API Docs">
+    <meta property="og:description" content="(nothing to do with viruses/crypto)
+An important precursor to this is that Noodle was responsible for the backups. We used tape backups at the time: go into server room, shove in tape, check next day on the console it was ok, weekly restore test. There was gaps of over a month at times.
+They kept &ldquo;Forgetting&rdquo;
+And, we regularly went to \\server\F$ to access things from the servers.
+I&rsquo;m not sure if I had just had a couple of days off for a reason, or if I Had been ill or whatever, but I Came into the backlash of this.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/whoops/usbserver/index.html">
+    <meta property="article:section" content="Botches and Bodges :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2024-02-11T16:58:12+00:00">
+    <meta property="article:modified_time" content="2024-02-11T16:58:12+00:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>(Noodle) USB File Server Deletion :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/whoops/usbserver/index.html" rel="canonical" type="text/html" title="(Noodle) USB File Server Deletion :: Quack Bot API Docs">
+    <link href="/whoops/usbserver/index.xml" rel="alternate" type="application/rss+xml" title="(Noodle) USB File Server Deletion :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/whoops/usbserver/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/whoops/index.html"><span itemprop="name">Botches and Bodges</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">(Noodle) USB File Server Deletion</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="noodle-usb-file-server-deletion">(Noodle) USB File Server Deletion</h1>
+
+<p>(nothing to do with viruses/crypto)</p>
+<blockquote>
+<p>An important precursor to this is that Noodle was responsible for the backups. We used tape backups at the time: go into server room, shove in tape, check next day on the console it was ok, weekly restore test.  There was gaps of over a month at times.<br>
+They kept &ldquo;Forgetting&rdquo;</p>
+</blockquote>
+<p>And, we regularly went to <em><strong>\\server\F$</strong></em> to access things from the servers.</p>
+<p>I&rsquo;m not sure if I had just had a couple of days off for a reason, or if I Had been ill or whatever, but I Came into the backlash of this.<br>
+I had in my head this was the DC, but as I type it out if may have been our media server and I had been trying to migrate it and had an out of date copy there.</p>
+<p>Anyhoot, Bossman had called me up and asked &ldquo;do I have a copy of X as something isn&rsquo;t working&rdquo;, I didn&rsquo;t and then I asked what had happened. Noodle had deleted it all.<br>
+After much digging, it turns out that Noodle had a memory stick in the computer and needed to delete it all, but they also had the server share in the quick access in windows. So they selected the quick access for the server, and started to delete that, and I don&rsquo;t think they noticed soon enough. I Know we lost quite a bit of low importance files.</p>
+<p>Apart from backups being checked by Managers, all of the polices that would have prevented this<br>
+A) Wouldn&rsquo;t really work in a school that size<br>
+B) Would haven&rsquo;t been effective as Noodle would have been logged in as Admin.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

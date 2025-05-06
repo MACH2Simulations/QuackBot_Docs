@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="dotRP-ERS-Main :: Quack Bot API Docs">
+    <meta name="twitter:description" content="dotRP ERS (SAPD &#43; SAFR &#43; CITY) Police Procedures
+IT IS CURRENTLY A SERVER RULE THAT NO DIRTY COP RP IS ALLOWED
+ERS Or Emergency Response Service. This is the overarching name when talking about the Emergency services within the city, as one big group, rather than indunvidual departments. This would also include city services such as the road team.
+This Section covers any sort of cross agency work, however, mainly applies major incident response, rather than day to day things such as car crashes.">
+    <meta property="og:title" content="dotRP-ERS-Main :: Quack Bot API Docs">
+    <meta property="og:description" content="dotRP ERS (SAPD &#43; SAFR &#43; CITY) Police Procedures
+IT IS CURRENTLY A SERVER RULE THAT NO DIRTY COP RP IS ALLOWED
+ERS Or Emergency Response Service. This is the overarching name when talking about the Emergency services within the city, as one big group, rather than indunvidual departments. This would also include city services such as the road team.
+This Section covers any sort of cross agency work, however, mainly applies major incident response, rather than day to day things such as car crashes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/thearchives/dotrp_docs/ersindex/index.html">
+    <meta property="article:section" content="DotRP Home (Archive) :: Quack Bot API Docs">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>dotRP-ERS-Main :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/thearchives/dotrp_docs/ersindex/index.html" rel="canonical" type="text/html" title="dotRP-ERS-Main :: Quack Bot API Docs">
+    <link href="/thearchives/dotrp_docs/ersindex/index.xml" rel="alternate" type="application/rss+xml" title="dotRP-ERS-Main :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/thearchives/dotrp_docs/ersindex/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/index.html"><span itemprop="name">The Archives</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/thearchives/dotrp_docs/index.html"><span itemprop="name">DotRP Home (Archive)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">dotRP-ERS-Main</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="dotrp-ers-main">dotRP-ERS-Main</h1>
+
+<h1 id="dotrp-ers-sapd--safr--city">dotRP ERS (SAPD + SAFR + CITY)</h1>
+<hr>
+<p><a href="/thearchives/dotrp_docs/ersindex/../../dotrp_docs/police">Police Procedures</a><br>
+<em><strong>IT IS CURRENTLY A SERVER RULE THAT NO DIRTY COP RP IS ALLOWED</strong></em></p>
+<hr>
+<h2 id="ers-or-emergency-response-service">ERS Or Emergency Response Service.</h2>
+<p>This is the overarching name when talking about the Emergency services within the city, as one big group, rather than indunvidual departments. This would also include city services such as the road team.</p>
+<p>This Section covers any sort of cross agency work, however, mainly applies major incident response, rather than day to day things such as car crashes.</p>
+<p>As Required - This will be used quite a lot when referring to which agency is in command of a situation and where the seniority applies.<br>
+This means is that whichever agency / person is most logical to command an incident will the person in charge.<br>
+This will also Normally be the most senior person from the given Agency [1]<br>
+FOR MAJOR INCIDENTS, USUALLY THE MOST SENIOR PERSON SHOULD BE IN CHARGE UNTIL AN ICU IS DEPLOYED<br>
+For instance.<br>
+in a bank robbery, the first member of LSPD Will be the one in charge until a more senior member of the dept arrives [2]. LSFR Will provide support as requested by LSPD<br>
+In a large fire, the first member of LSFR Will be the one in charge until a more senior member of the dept arrives [2], LSPD Will provide support as requested by LSFR</p>
+<p>[1] - It may not always make sense for the most senior member to be in charge, IE In a hostage situation, it would make more sense for (the chief) to pass command to the SWAT Commander for the response to the situation and that allows chief to manage cooperation with other agency&rsquo;s<br>
+[2] it might not make sense for the first member of a dept. to be in charge, IE a Senior member of the Fire Dept will have more experience with bank robbery&rsquo;s than a member of the PD Who&rsquo;s boots haven&rsquo;t even got dust on yet. (Command would be relinquished as soon as a more senior member is there.</p>
+<h3 id="ers-command">ERS Command</h3>
+<p>This will be the most senior member of responding agencies, the aim is for all things to go through these people and these people making the decisions. And for the Agency lead to be command each agency with joint decisions made by the Senior staff.<br>
+IE For a major fire, Fire Chief and Police Chief would be stationed at a command centre (or in some cases the air) and then command their relevant units.<br>
+This is how it should be for larger day to day incidents too</p>
+<h2 id="air-units">Air units.</h2>
+<p>See <a href="/thearchives/dotrp_docs/ersindex/../../dotrp_docs/flight">Flight Training</a>
+For Shared Units such as Air x, the commanding dept will be the incident commander. So for a bank robbery Air X will be under command of LSPD, And in a fire it would be command of LSFR.
+This is irrelevant of the pilot or there rank, this does not affect the normal rights of a pilot to say hell no.<br>
+ERS Aircraft will under the general command of an ERS command centre.</p>
+<hr>
+<p>Some of this doesn&rsquo;t make sense from a realism point of view, HOWEVER It makes sense from an in game context POV<br>
+IRL There would never just be 1 trucks worth of fire and 8 PD in a city the size of LS<br>
+and thus we have to take some liberties in how stuff works</p>
+<hr>
+<h2 id="radio-channels">Radio Channels</h2>
+<p>In the interest of making it easier for our viewers and new pd members and in the interest of being more current and modern we are going back to plain language for radio traffic.<br>
+<em><strong>BREVITY is IMPORTANT</strong></em><br>
+So THINK about what you are going to say, THEN say it.<br>
+Short and simple is the key.<br>
+Start calling BEFORE you turn on your lights<br>
+7Mary3-Dispatch, Motor Vehicle Stop, Currently NB Vespucci and SanAndreas, grey honda civic, occupied 1x Male, PlateNumber</p>
+<p><a href="https://www.cisa.gov/sites/default/files/publications/PlainLanguageGuide.pdf" target="_blank">CISA Guide</a></p>
+<hr>
+<p>So for the vast majority of stuff you do, you should be on <strong>COM 1</strong> this channel can be listened into on by anyone who has a radio., this is part of the openness of the city.<br>
+All the channels marked as NO encryption can be listened in on by anyone, it is a crime to transmit on a channel you shouldn&rsquo;t.</p>
+<p>All the encrypted channels must only be used when approved by a superior (see table for rank) / judge.</p>
+<p>Priority goes off first event takes primary channel unless they are able to move before hand.<br>
+This will be made easier when we have a person for dispatch.</p>
+<p>Channel 12 is for tow<br>
+Channel 13 + is public radio space</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>+---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+|Channel Number | Channel Name | Usage                                                                  | Dept      | Encryption |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 1             | Com 1        | Day To Day Usage, You should probably be on this channel               | LSPD/LSFR | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 2             | Com 2        | Secondary Channel for high call volume                                 | LSPD/LSFR | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 3             | Opp 1        | Secondary Comms, such as a chase or training to limit traffic on Com 1 | LSPD/LSFR | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 4             | Opp 2        | Secondary Comms, such as a chase or training to limit traffic on Com 2 | LSPD/LSFR | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 5             | Com 4 - LSFR | Tertiary Comms, primarily for closed track LSFR Training               | LSFR      | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 6             | Com 4 - LSPD | Tertiary Comms, primarily for closed track LSPD Training               | LSPD      | NO         |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 7             | Tac 1        | Primary Tactical Channel, Usage approved by SGT(PD) / LT (LSFR).       | LSPR/LSFR | YES        |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 8             | Tac 2        | Secondary Tactical Channel, Usage approved by SGT(PD) / LT (LSFR).     | LSPR/LSFR | YES        |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 9             | Tac 3        | Tertiary Tactical Channel, Usage approved by SGT(PD) / LT (LSFR).      | LSPR/LSFR | YES        |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 10            | Com 5 - LSFR | Private Fire Channel - Not for common use                              | LSFR      | YES        |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+
+| 11            | Com 5 - LSPD | Private Police Channel - Not for common use                            | LSPD      | YES        |
++---------------+--------------+------------------------------------------------------------------------+-----------+------------+</code></pre></div><h2 id="radio-callsigns">Radio Callsigns</h2>
+<h3 id="air-units-1">Air Units</h3>
+<div class="wrap-code highlight"><pre tabindex="0"><code>+--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Callsign     | Vehicle                         | Usage                                          | Dept           | Commander           |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Air X        | Police Heli or LSFR Rescue Heli | Police Chases, Command AC, SAR, Fire Control   | LSPD/LSFR      | As Required         |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Wolf X       | Police Heli or LSFR Rescue Heli | As Air X Senior Staff                          | LSPD/LSFR      | As Required         |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Fire X       | LSFR Fire Fighting AC/HELI      | Aerial firefighting                            | LSFR           | LSFR                |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Guard X      | Coast Guard Heli                | Coastal Security Patrol, SAR                   | LSFR + LSPD(O) | As Required         |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Hawk X       | AWACS                           | [REDACTED]                                     | ERS            | ERS                 |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Striker X    | [REDACTED]                      | Security Enforcement, Escorts                  | ERS            | ERS                 |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Flyswatter X | Swat Heli                       | SWAT Operations                                | LSPD           | LSPD (SWAT)         |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
+| Victor X     | Any                             | VIP Transport, Can be given to its escorts too | LSPD/ERS/SA    | Air Traffic Control |
++--------------+---------------------------------+------------------------------------------------+----------------+---------------------+</code></pre></div><h3 id="police">Police</h3>
+<div class="wrap-code highlight"><pre tabindex="0"><code>+--------------+-----------+-------+----------------------------------+
+| Callsign     | Name      | Rank  | Division                         |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 8     | Chico     | OFF   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 13    | Jeffry    | OFF   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 14    | Jeremy    | OFF   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 17    | Nicole    | OFF   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 37    | Ricky     | OFF   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 43    | James     | CADET | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Adam 55    | Leonard   | SR OFF| Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| Charlie 1    | Will      | CHIEF | Chief of Police                  |
++--------------+-----------+-------+----------------------------------+
+| 7 Mary 3     | Cyril     | SGT   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 Monkey 5   | El Chango | SR OFF| Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+
+| 7 David 7    | Nikola    | SGT   | EMS cert, Flight Cert, SWAT Cert |
++--------------+-----------+-------+----------------------------------+
+| 7 Indigo 8   | Rose      | SGT   | Crime Scene Investigation        |
++--------------+-----------+-------+----------------------------------+
+| 7 William 6  | Cassie    | DET   | Traffic &amp; Patrol                 |
++--------------+-----------+-------+----------------------------------+</code></pre></div><h3 id="lsfr">LSFR</h3>
+<div class="wrap-code highlight"><pre tabindex="0"><code>+--------------+--------+-------+----------------------------+
+| Callsign     | Name   | Rank  | Notes                      |
++--------------+--------+-------+----------------------------+
+| Battalion 22 | Slater | Chief | Wolf x in Air              |
++--------------+--------+-------+----------------------------+
+| 7S7          | Nikki  | SWAT  | Cross trained, Flight Cert |
++--------------+--------+-------+----------------------------+</code></pre></div><hr>
+<h2 id="fire-scenarios">Fire Scenarios</h2>
+<p>1 Training Structure Fire - Docks (Submarine Warehouse)<br>
+2 Training Structure Fire (With gas tanks) - Docks (Submarine Warehouse)<br>
+3 Little Soule gas station fire<br>
+4 Court House (old?)<br>
+5 6 7 8 subway<br>
+9 Plane training LSIA<br>
+11 Hill near oil deriks<br>
+12 PD<br>
+13 Mount near zancudo</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

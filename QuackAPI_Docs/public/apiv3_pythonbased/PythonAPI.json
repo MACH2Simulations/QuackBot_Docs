@@ -1,0 +1,68 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "QuackBot API V3 Python",
+    "description" : "Theres a coulpe of endpoints that run on Python in the backend",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/MACH2Simulations/QuackBotAPI_PY1/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  }, {
+    "url" : "https://NULL.api.m2s.bz/api/NULL",
+    "description" : "Null"
+  } ],
+  "tags" : [ {
+    "name" : "Dormant",
+    "description" : "Dormant Endpoints"
+  } ],
+  "paths" : {
+    "/Jira" : {
+      "get" : {
+        "tags" : [ "Dormant" ],
+        "summary" : "Creates a Jira ticket form a Discord Channel",
+        "description" : "Takes the content of a discord Channel, Excludes the first message and then creates a Jira ticket with the information included.\n\nTODO, Add Auth & Jira Params\n",
+        "operationId" : "DCJira",
+        "parameters" : [ {
+          "name" : "code",
+          "in" : "query",
+          "description" : "API Key",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "query",
+          "description" : "Discord Channel ID",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer"
+          }
+        }, {
+          "name" : "catid",
+          "in" : "query",
+          "description" : "Discord Channel Catagory ID",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "Returns Jira Ticket Link"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : { }
+  }
+}

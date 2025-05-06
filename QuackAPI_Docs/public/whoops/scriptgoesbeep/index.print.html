@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="Documentation for the QuackBot API &amp; Machys useful scripts">
+    <meta name="author" content="MACHY Of MACH 2 Simulations">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(Noodle) Script Goes Beep :: Quack Bot API Docs">
+    <meta name="twitter:description" content="Sometime Late time at the grammar.
+I Realize as i started to prep to write this out it may not paint be in the best of lights&hellip;
+This person whom i didn&rsquo;t help in this situation had far beyond what would be classed as normal support in learning the tools we used. Everyone in the dept had helped them at some point to learn this process.
+This included several show, tell and Watch walkthroughs of using this tool">
+    <meta property="og:title" content="(Noodle) Script Goes Beep :: Quack Bot API Docs">
+    <meta property="og:description" content="Sometime Late time at the grammar.
+I Realize as i started to prep to write this out it may not paint be in the best of lights&hellip;
+This person whom i didn&rsquo;t help in this situation had far beyond what would be classed as normal support in learning the tools we used. Everyone in the dept had helped them at some point to learn this process.
+This included several show, tell and Watch walkthroughs of using this tool">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/whoops/scriptgoesbeep/index.html">
+    <meta property="article:section" content="Botches and Bodges :: Quack Bot API Docs">
+    <meta property="article:published_time" content="2024-06-21T21:45:11+01:00">
+    <meta property="article:modified_time" content="2024-06-21T21:45:11+01:00">
+    <meta property="og:site_name" content="Quack Bot API Docs">
+    <title>(Noodle) Script Goes Beep :: Quack Bot API Docs</title>
+    <link href="http://localhost:1313/whoops/scriptgoesbeep/index.html" rel="canonical" type="text/html" title="(Noodle) Script Goes Beep :: Quack Bot API Docs">
+    <link href="/whoops/scriptgoesbeep/index.xml" rel="alternate" type="application/rss+xml" title="(Noodle) Script Goes Beep :: Quack Bot API Docs">
+    <link href="/images/favicon.png?1746567088" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746567089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746567089" rel="stylesheet">
+    <link href="/css/fonts.css?1746567089" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746567089" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746567089" rel="stylesheet">
+    <link href="/css/theme-ZenRed.css?1746567089" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1746567089" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1746567089" rel="stylesheet">
+    <link href="/css/print.css?1746567089" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1746567089" rel="stylesheet">
+    <link href="/css/ie.css?1746567089" rel="stylesheet">
+    <script src="/js/url.js?1746567089"></script>
+    <script src="/js/variant.js?1746567089"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'ZenRed', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red', 'ZenRed' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/whoops/scriptgoesbeep/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/whoops/index.html"><span itemprop="name">Botches and Bodges</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">(Noodle) Script Goes Beep</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="noodle-script-goes-beep">(Noodle) Script Goes Beep</h1>
+
+<p>Sometime Late time at the grammar.</p>
+<blockquote>
+<p>I Realize as i started to prep to write this out it may not paint be in the best of lights&hellip;<br>
+This person whom i didn&rsquo;t help in this situation had <em><strong>far beyond</strong></em> what would be classed as normal support in learning the tools we used. Everyone in the dept had helped them at some point to learn this process.<br>
+This included several <em><strong>show</strong></em>, <em><strong>tell</strong></em> and <em><strong>Watch</strong></em> walkthroughs of using this tool<br>
+And a guide which i feel could be handed to almost anyone and if taught how to open powershell how it was needed could likely run this process.<br>
+See also <a href="/whoops/burnout/index.html">Burnout</a></p>
+</blockquote>
+<h3 id="create_massusers_version_7ps1">Create_MassUsers_Version_7.ps1</h3>
+<p>This was a script i created, much pain and many, many revisions &amp; optimizations later V7 was born.</p>
+<p>It ingested a CSV, created the users, the share permissions, (weird stuff needed for Onsite exchange &amp; move to 365), created password sheets to be handed to users &amp; a master sheet for new student onboarding to be used by the IT Teachers in the first few lessons.<br>
+It could easily churn though 100s of users with no issue and was only slowed down by self imposed limits caused by AD replication.<br>
+There was however almost no error checking, my assumption was the data would always be checked before being ran and in testing 1000s of test accounts i could never get it to fail if the data was correct&hellip;</p>
+<p>It worked <em><strong>Really</strong></em> Well and although i would remake it from scratch if i needed it again, i am still <em><strong>very</strong></em> proud of it and the documentation i made along with it.</p>
+<p>It had very verbose logging (Around 50 different printed messages)</p>
+<p><a href="#R-image-67dfa4d70334c6eaaeb4dcd8ede2b758" class="lightbox-link"><img src="/whoops/scriptgoesbeep/../../Whoops/Content/ErrorDocs.PNG" alt="Error Codes" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67dfa4d70334c6eaaeb4dcd8ede2b758"><img src="/whoops/scriptgoesbeep/../../Whoops/Content/ErrorDocs.PNG" alt="Error Codes" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<blockquote>
+<p>IF INCESSANT BEEPING SOMETHING IS WRONG</p>
+</blockquote>
+<p>The script was pretty much set and forget. Plenty of other things to do that isn&rsquo;t watching powershell create 100 users. So there was audio feedback when the script was running if it was done or needed user intervention.</p>
+<p>Noodle was going to do the user creation for the new year 7&rsquo;s</p>
+<ol>
+<li>Sanity Check all data is there</li>
+<li>Open ISE</li>
+<li>Run script</li>
+<li>Paste CSV Path</li>
+</ol>
+<h2 id="story">Story</h2>
+<p>They started of the script, and then i could hear &ldquo;beep beep beep&rdquo;.  Sometimes this happens if AD Rep is very slow and only happens once.<br>
+Also, knowing the script, this was happening just after the user has been created, likely in one of the few error checks that checked if the user existed before doing stuff with permissions.<br>
+The Script needed to be quit and then whatever was wrong fixed and then started again. Given this had only done a user or 2 the best allbeit bad option would have been to delete the ones created and start again.</p>
+<p>It took them an hour &amp; forty+  minutes to notice and do something about it.<br>
+They were ignoring the beeping i could hear across the room over my music<br>
+They did not check the script to see if it was running in that time</p>
+<p>The users finally got created&hellip;<br>
+Looking at the dates im not 100% sure if this was the new year 7s but it was deffo a good chunk of pupils&hellip;</p>
+<hr>
+<blockquote>
+<p>I don&rsquo;t know what to take from this tbh, even 3 years on.<br>
+One part of me says i should have said something 5 mins in.<br>
+The other part says sometimes people need to fail at a thing, and given this had 0 long term harm failing it<br>
+But also it should never have gotten to this point &amp; i should really have spoken to the boss a long long time before this discussing my concerns and issues<br>
+See also <a href="/whoops/burnout/index.html">Burnout</a></p>
+</blockquote>
+<hr>
+<p>The irony is as this was happing i modified a copy of the script to play a dinosaur roar, for if / when this happens again, it would be far more obvious.  When Noodle copied the script again, it stopped working because it couldn&rsquo;t find the sound file.<br>
+Script wasn&rsquo;t working, i brushed it off as user error and told them they need to do some troubleshooting.<br>
+They didn&rsquo;t troubleshoot and just got the boss to come take a look (they sent an email 5 minutes after i said i couldn&rsquo;t help at the time). 30 second fix once i knew the error&hellip;<br>
+<em><strong>Shrug Emoji</strong></em></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1746567089" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746567089" defer></script>
+    <script src="/js/theme.js?1746567089" defer></script>
+  </body>
+</html>

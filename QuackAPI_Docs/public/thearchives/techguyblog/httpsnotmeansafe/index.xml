@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTPS Does Not Mean Safe on Quack Bot API Docs</title>
+    <link>http://localhost:1313/thearchives/techguyblog/httpsnotmeansafe/index.html</link>
+    <description>Recent content in HTTPS Does Not Mean Safe on Quack Bot API Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 15 Feb 2024 21:08:02 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/thearchives/techguyblog/httpsnotmeansafe/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

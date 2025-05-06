@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on Quack Bot API Docs</title>
+    <link>http://localhost:1313/powershell/index.html</link>
+    <description>Recent content in PowerShell on Quack Bot API Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 08 Feb 2024 20:04:15 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Liners</title>
+      <link>http://localhost:1313/powershell/oneliners/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:01:44 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/oneliners/index.html</guid>
+      <description>This page will be a selection of useful one-liners
+Notes When you see &amp;ldquo;$User&amp;rdquo;, replace this with the username of the account you are querying.
+You may need to run &amp;ldquo;Import-Module ActiveDirectory&amp;rdquo; if things fail.
+All of theses can be found as functions in
+Mach&amp;rsquo;s Functions
+Password Last Set get-aduser $user -properties passwordlastset, lastLogon select name, passwordlastset, @{n=&amp;#39;LastLogon&amp;#39;;e={[DateTime]::FromFileTime($_.LastLogon)}}Computer Password Last Set This gets ALL COMPUTERS IN AD where there password was last set before the date, its a dirty way of finding VERY stale computers.</description>
+    </item>
+    <item>
+      <title>Machs Functions</title>
+      <link>http://localhost:1313/powershell/machsfunctions/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:01:44 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/machsfunctions/index.html</guid>
+      <description>This will be a large mishmash of useful PowerShell functions.
+This contains everything from
+One Liners
+To Pull In Mach-Functions.psm1
+Import-Module &amp;#34;C:\Scripts\Mach-Functions.psm1&amp;#34;Debug Write Possibly redundant, but you can use this to choose if to print certain elements to the console based on a passed through Boolean.
+Usage
+DBW &amp;#34;Text&amp;#34; &amp;#34;Colour&amp;#34; $trueORfalseFunction
+function DBW { param ( [string]$ToPrint, [string]$Colour, [bool]$Shouldwrite ) if ($Shouldwrite){ Write-host $ToPrint -ForegroundColor $Colour } }Get Password Last Set Gets the last time a password was set for the user</description>
+    </item>
+    <item>
+      <title>Colour Ping</title>
+      <link>http://localhost:1313/powershell/colourping/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:04:15 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/colourping/index.html</guid>
+      <description>This script will ping an IP Address until told to stop, giving you a colour coded output depending on the set latency values.
+This for instance would allow you to be pinging a server and see the outliers of latency.
+Notes Example output of the script, using very aggressive values for testing/demo.
+The Script itself ColourPing.ps1
+$LowThreshold = 12 ## 0 - 12 shows green $MedThreshold = 25 ## 13-25 Shows yellow, 25-50 orange $ErrorThreshold = 50 ## Above 50 Shows text in red $Target = &amp;#34;1.</description>
+    </item>
+    <item>
+      <title>Log AD Group Memberships</title>
+      <link>http://localhost:1313/powershell/getandloggroupmeberships/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:04:15 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/getandloggroupmeberships/index.html</guid>
+      <description>This script will create a text file containing group memberships, for each member of the OU Specified in the search base.
+This script will work on
+user, computer, group, or service account
+Notes See Date Formatting if you wish to change the date format
+Make sure you set the Search Base otherwise it will scan the entirety of active directory
+The Script itself GetandLogGroupMemberships.ps1
+$Users = Get-ADUser -SearchBase &amp;#34;OU=YOUROUHERE,DC=DOMAIN,DC=TLD&amp;#34; -Filter * | select -ExpandProperty SamAccountName ##This gets all the users in a specifed OU $Date = get-date -Format ddMMyyyy ## Gets the date in Day Month Year number $LogLocation = &amp;#34;C:\Scripts\Data\$Date&amp;#34; ## Where the logs will be made, this can be UNC New-Item $LogLocation -Force -ItemType Directory ## Creates the dated folder ForEach ($User in $Users){ ## For each user found $LogLocationName = &amp;#34;$LogLocation\$User.</description>
+    </item>
+    <item>
+      <title>Mass Message</title>
+      <link>http://localhost:1313/powershell/massmessage/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:04:15 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/massmessage/index.html</guid>
+      <description>This script will look through AD and send a message to all Computers that match a wildcard name, IE entering admin will match with admin-55, site1-admin, site1-amdin-11 etc.
+OR it will go through an OU Given by Search Base
+It will then display the message for the set time (MS) set to 600 by default.
+Notes Example output of the message shown.
+The Script itself MassMessage.ps1
+$ComputerName = read-host &amp;#34;Enter Computer name Do not include * For wild cards.</description>
+    </item>
+    <item>
+      <title>Profile Yeeter</title>
+      <link>http://localhost:1313/powershell/profilefix/index.html</link>
+      <pubDate>Thu, 08 Feb 2024 20:04:15 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/profilefix/index.html</guid>
+      <description>This script will remove local profiles on a computer and then restarts it.
+With a list of Users that can be excluded.
+This needs to be run as an admin.
+The Script itself ProfileFix.ps1
+$LoggedInUsers = (Get-WMIObject -ClassName Win32_ComputerSystem).Username.substring(4) $Dirs = Get-ChildItem c:\users\ -Exclude &amp;#34;Public&amp;#34;, $LoggedInUsers,&amp;#34;Default&amp;#34; | select -ExpandProperty Name get-volume foreach ($dir in $dirs) { write-host &amp;#34;Trying to remove profile with path of $dir&amp;#34; -forgroundcolor green Get-CimInstance -Class Win32_UserProfile | Where-Object { $_.</description>
+    </item>
+    <item>
+      <title>From CSV To AD Group</title>
+      <link>http://localhost:1313/powershell/csvtogroup/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/csvtogroup/index.html</guid>
+      <description>This script will read from a CSV and add users with the email in it to an AD Group.
+This is very useful when you need an non IT Person to be able to add users to a group, without them going within 100 miles of AD, or involving IT.
+This needs to be run as an admin with AD Perms.
+REQUIRES Machy&amp;rsquo;s Functions Requires the DBW Function from this script.</description>
+    </item>
+    <item>
+      <title>PowerShell PIP Bulk Installer</title>
+      <link>http://localhost:1313/powershell/pip/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/powershell/pip/index.html</guid>
+      <description>This script will bulk install a list of given Python modules and can be ran on user logon (once per device) using GPO.
+It then creates a text file so it doesn&amp;rsquo;t reinstall the modules every time.
+Note: This will update and reinstall all the packages listed.
+Requirements Python installed to &amp;ldquo;All Users&amp;rdquo; Pip Installed PowerShell This has been tested and works with Python 3.10 - 3.13
+The Script itself Python_Packages_313.</description>
+    </item>
+  </channel>
+</rss>

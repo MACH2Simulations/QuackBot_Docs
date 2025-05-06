@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MACH-Raven-Functions on m2s docs</title>
+    <link>http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/</link>
+    <description>Recent content in MACH-Raven-Functions on m2s docs</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OUT OF DATE - MR Functions</title>
+      <link>http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/readme/</guid>
+      <description>&lt;p&gt;OLD OLD OLD OLD OLD OLD&lt;/p&gt;&#xA;&lt;h1 id=&#34;mach--raven-functions&#34;&gt;MACH &amp;amp; Raven Functions &lt;a href=&#34;#mach--raven-functions&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Please read our &lt;a href=&#34;https://docs.dotroleplay.com/mrfunctions&#34; rel=&#34;external&#34; target=&#34;_blank&#34;&gt;Documentation&lt;svg width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt; For help with configuration&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;usable-items&#34;&gt;Usable Items &lt;a href=&#34;#usable-items&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This allows you to create food/drink/meal/booze items!&lt;br&gt;&#xA;Making it a simpler and more centeral location to update these items&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/usableitems&#34;&gt;Usable Items&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Usable-Items</title>
+      <link>http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/usableitems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/thearchives/dotrp_docs/mrfunctions/usableitems/</guid>
+      <description>&lt;h1 id=&#34;mrf-docs-usable-items&#34;&gt;MRF Docs Usable items &lt;a href=&#34;#mrf-docs-usable-items&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be &lt;a href=&#34;../core/dbitems&#34;&gt;IN THE DATABASE&lt;/a&gt;.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xD;&#xA;  &lt;pre id=&#34;05236a3&#34; class=&#34;language-lua &#34;&gt;&#xD;&#xA;  &lt;code&gt;ESX.RegisterUsableItem(&amp;#39;fishbait&amp;#39;, function(source) //fishbait db item name &#xD;&#xA;    local xPlayer = ESX.GetPlayerFromId(source)&#xD;&#xA;    xPlayer.removeInventoryItem(&amp;#39;fishbait&amp;#39;, 1) //fishbait is item name in db&#xD;&#xA;    TriggerClientEvent(&amp;#39;esx_status:add&amp;#39;, source, &amp;#39;hunger&amp;#39;, 8000) //fill food&#xD;&#xA;    TriggerClientEvent(&amp;#39;esx_basicneeds:onEat&amp;#39;, source)&#xD;&#xA;    TriggerClientEvent(&amp;#39;esx:showNotification&amp;#39;, source, _U(&amp;#39;used_fishbait&amp;#39;)) &#xD;&#xA;    //used_fishbait (for translations)&#xD;&#xA;end)&lt;/code&gt;&#xD;&#xA;  &lt;/pre&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Head to the useable items section in the cfg file.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
