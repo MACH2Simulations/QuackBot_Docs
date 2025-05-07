@@ -52,7 +52,7 @@ enableEmoji = true
 
 
 [params.footer]
-  copyright = "© 2025 [MACH 2 Simulations](https://thegatewaytoanewworld.com)"
+  copyright = "© 2025 [MACH 2 Simulations](https://thegatewaytoanewworld.com) "
   version   = true
 
   [[menu.primary]]
