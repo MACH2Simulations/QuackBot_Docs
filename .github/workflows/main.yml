@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'action.yml'
-      - 'generate_changelog_gh.sh'
+      - 'cl.sh'
   workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}
@@ -39,7 +39,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Generate Changelog
-      uses: MACH2Simulations/QuackBot_Docs
+      uses: MACH2Simulations/QuackBot_Docs@2.0
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
