@@ -30,23 +30,6 @@ PrinterAddV2.exe /qn /del "/s m2s-print1" "/p Office-Mono Office-Colour Receptio
 "/p \<Printer1\> \<Printer2\>" - Space Separated list of printers, should match the Queue/Share name from the print server  
 "/t 10" - Must be contained in quotes, how many times will it try to add the printer. Once is ***normally*** enough, but the default is 5. (Optional)
 
-![Print Adder V2 - A Gui With a progress bar and status info](../../PrintAdderV2.png)  
+![Print Adder V2 - A Gui With a progress bar and status info](https://docs.m2s.uk/docs/PrintAdderV2.png)  
 
-## Change Log  
-
-### 1.1  
-
-```text
-Added Del Only  
-Started to add dark mode  
-```  
-
-### 1.0 - Initial Build    
-
-```text
-First Working Build
-Can Deploy
-Can Delete
-Added Extra args for Quite 
-
-```
+{{< prism src="https://raw.githubusercontent.com/MACH2Simulations/PrinterAddV2/refs/heads/master/CHANGELOG.md" />}}
