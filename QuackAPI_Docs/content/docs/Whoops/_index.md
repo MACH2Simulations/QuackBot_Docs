@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Botches and Bodges"
-weight = 2
+weight = 26
 +++
 
 ***Some stories of things going wrong, and the bodges that should never be talked about.***  

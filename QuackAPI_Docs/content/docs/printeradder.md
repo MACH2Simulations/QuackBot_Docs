@@ -1,6 +1,6 @@
 +++ 
 title = "Print Adder V2"
-Weight = 1 
+Weight = 3 
 icon = "print"
 +++
 
