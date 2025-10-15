@@ -1,2 +1,0 @@
-itemname,level,category,isgun,jobs,jobsgrades,ammount,SuccessRate,requireBlueprint,time,Ingredient1,ig1count,Ingredient2,ig2count,Ingredient3,ig3count,Ingredient4,ig4count,Ingredient5,ig5count,Ingredient6,ig6count
-drink_flaming_slater,0,drinks,FALSE,,,4,100,FALSE,10,['kraken'] = ,"1,",['cola'] =,"1,",['gunpowder'] =,"1,",['lighter'] =,"1,",,,,
