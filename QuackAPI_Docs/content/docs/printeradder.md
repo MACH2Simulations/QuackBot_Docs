@@ -16,7 +16,7 @@ This can also delete all printers to get rid of the default stuff that windows c
 
 ## How To use  
 
-> This shows it being ran from a CLI, this can be run as a startup program via GPO
+> This shows it being ran from a CLI, this can be run as a startup program via GPO  
 
 ```batch
 PrinterAddV2.exe /qn /del "/s m2s-print1" "/p Office-Mono Office-Colour Reception-Direct" "/t 10" 
