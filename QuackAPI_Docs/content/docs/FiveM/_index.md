@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "FiveM Scripts Docs And Versions"
-weight = 3
+weight = 22
 +++
 
 ***New FiveM Stuff.***  
