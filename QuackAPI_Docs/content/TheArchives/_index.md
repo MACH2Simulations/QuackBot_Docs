@@ -1,7 +1,6 @@
 +++
-archetype = "chapter"
-title = "The Archives"
-weight = 8
+title = "Archives"
+weight = 99
 +++
 
 A Collection of Old Sites and Projects.  

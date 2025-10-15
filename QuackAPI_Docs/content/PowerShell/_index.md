@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "PowerShell"
-weight = 4
+weight = 45
 +++
 
 Welcome to MACHS Scripts.  

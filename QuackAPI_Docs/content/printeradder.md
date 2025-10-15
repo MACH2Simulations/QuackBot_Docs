@@ -1,7 +1,11 @@
 +++ 
 title = "Print Adder V2"
-Weight = 1 
+Weight = 3 
+icon = "print"
 +++
+
+{{< table >}}
+
 ||||||
 |-|-|-|-|-|-|
 | ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mach2simulations/PrinterAddV2/master) | ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/mach2simulations/PrinterAddV2/latest/total) | ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/mach2simulations/PrinterAddV2) | ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/mach2simulations/PrinterAddV2) | ![GitHub Release](https://img.shields.io/github/v/release/mach2simulations/PrinterAddV2) | [  Download](https://github.com/MACH2Simulations/PrinterAddV2/releases/latest) |  
@@ -26,23 +30,6 @@ PrinterAddV2.exe /qn /del "/s m2s-print1" "/p Office-Mono Office-Colour Receptio
 "/p \<Printer1\> \<Printer2\>" - Space Separated list of printers, should match the Queue/Share name from the print server  
 "/t 10" - Must be contained in quotes, how many times will it try to add the printer. Once is ***normally*** enough, but the default is 5. (Optional)
 
-![Print Adder V2 - A Gui With a progress bar and status info](../../PrintAdderV2.png)  
+![Print Adder V2 - A Gui With a progress bar and status info](https://docs.m2s.uk/docs/PrintAdderV2.png)  
 
-## Change Log  
-
-### 1.1  
-
-```text
-Added Del Only  
-Started to add dark mode  
-```  
-
-### 1.0 - Initial Build    
-
-```text
-First Working Build
-Can Deploy
-Can Delete
-Added Extra args for Quite 
-
-```
+{{< prism src="https://raw.githubusercontent.com/MACH2Simulations/PrinterAddV2/refs/heads/master/CHANGELOG.md" />}}
