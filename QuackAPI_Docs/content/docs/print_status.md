@@ -14,4 +14,4 @@ icon = "print"
 
 ## ChangeLog
 
-{{< prism src="(https://github.com/MACH2Simulations/Machs-Printer-Status-Tool/blob/master/CHANGELOG.md)" />}}
+{{< prism src="(https://raw.githubusercontent.com/MACH2Simulations/Machs-Printer-Status-Tool/refs/heads/master/CHANGELOG.md)" />}}
