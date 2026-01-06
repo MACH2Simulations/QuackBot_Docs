@@ -6,7 +6,9 @@ weight = 46
 ## What 
 
 This script takes in a CSV of accounts, with the date in ddMMyyyy format, and a Yes/No and will enable the accounts on those days  
-
+{{< table >}}
+||||||
+|-|-|-|-|-|
 | User | 06012026 | 07012026 | 08012026 | 09012026 |
 | Test-User-1 | Yes | Yes | Yes | Yes |
 | Test-User-2 | Yes | No | Yes | No |
@@ -15,7 +17,7 @@ This script takes in a CSV of accounts, with the date in ddMMyyyy format, and a 
 | Test-User-5 | Yes | Yes | No | Yes |
 | Test-User-6 | Yes | No | Yes | No |
 | Test-User-7 | Yes | Yes | No | Yes |
-
+{{< /table >}}
 
 
 
