@@ -3,8 +3,6 @@ title = 'PSExec Adobe Updater'
 weight = 3
 +++
 
-# PSExec Adobe Updater  
-
 Use this to invoke the Adobe Remote Updater using PSExec and a list of computers from AD. Runs on multiple devices at the same time.   
 
 ## Notes  
