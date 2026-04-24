@@ -10,6 +10,7 @@ trap 'echo "An error occurred at line $LINENO. Exiting."' ERR
 REPO_DIR="."
 CHANGELOG_FILE="$REPO_DIR/QuackAPI_Docs/content/docs/CHANGELOG.md"
 
+
 echo "Starting changelog generation script..."
 git config --global --add safe.directory /github/workspace
 git -C /github/workspace fetch --unshallow
@@ -18,11 +19,7 @@ git -C /github/workspace fetch --unshallow
 > $CHANGELOG_FILE
 
 # Add the introductory text to the changelog
-# echo "# Changelog" >> $CHANGELOG_FILE
-echo "+++" >> $CHANGELOG_FILE
-echo "title = \"Changelog\"" >> $CHANGELOG_FILE
-echo "weight = 10000 " >> $CHANGELOG_FILE
-echo "+++" >> $CHANGELOG_FILE
+echo "# Changelog" >> $CHANGELOG_FILE
 echo "" >> $CHANGELOG_FILE
 echo "All notable changes to this project will be documented in this file." >> $CHANGELOG_FILE
 echo "" >> $CHANGELOG_FILE
@@ -42,7 +39,7 @@ echo "Repository:"
 echo $GITHUB_REPO_URL
 
 # Fetch the latest changes
-git fetch --tags --depth=10
+git fetch --tags
 echo "Fetched latest tags."
 
 # Get the latest tag
@@ -62,11 +59,10 @@ echo "Found tags: $TAGS"
 # Placeholder for the previous tag
 TAG_TO=HEAD
 
-# Define categories
-CATEGORIES="feat fix ci perf docs gitops deploy test demo build chore style refactor"
-
-# Regular expression for matching conventional commits
+# --- MODIFIED: Removed 'chore' from categories and regex ---
+CATEGORIES="feat fix ci perf docs gitops deploy test demo build style refactor"
 CONVENTIONAL_COMMIT_REGEX="^.* (feat|fix|ci|perf|docs|gitops|deploy|test|demo|build|style|refactor)(\(.*\))?: "
+# -----------------------------------------------------------
 
 print_tag() {
     echo "Processing tag: $2"
@@ -104,10 +100,10 @@ print_tag() {
                 "test") CATEGORY_NAME="Test" ;;
                 "demo") CATEGORY_NAME="Demo" ;;
                 "build") CATEGORY_NAME="Build" ;;
-                "chore") CATEGORY_NAME="Chore" ;;
                 "style") CATEGORY_NAME="Style" ;;
                 "refactor") CATEGORY_NAME="Refactor" ;;
             esac
+
             echo "### $CATEGORY_NAME" >> $CHANGELOG_FILE
             echo "Listing commits for category: $CATEGORY_NAME under tag $2"
             echo "$CATEGORY_COMMITS" | while read -r COMMIT; do
@@ -124,7 +120,10 @@ print_tag() {
     done
 
     # Process 'Other' category
-    OTHER_COMMITS=$(echo "$ALL_COMMITS" | grep -v -E "$CONVENTIONAL_COMMIT_REGEX" || true)
+    # Note: 'chore' commits will end up here unless you explicitly exclude them from 'Other' too.
+    # To ignore them entirely, we filter them out of the OTHER_COMMITS list.
+    OTHER_COMMITS=$(echo "$ALL_COMMITS" | grep -v -E "$CONVENTIONAL_COMMIT_REGEX" | grep -v -E "^.* chore(\(.*\))?: " || true)
+    
     if [ ! -z "$OTHER_COMMITS" ]; then
         echo "### Other" >> $CHANGELOG_FILE
         echo "Listing commits for category: Other under tag $2"
@@ -141,7 +140,6 @@ print_tag() {
     fi
 
     echo "Completed processing tag: $2"
-    # Update the previous tag
 }
 
 # Iterate over tags
