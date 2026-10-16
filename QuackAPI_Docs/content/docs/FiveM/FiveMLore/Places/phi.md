@@ -5,7 +5,7 @@ weight = 1
 
 ## Prometheus Heavy Industries
 
-{{< prism src="/fivem/fivemlore/places/phi_short.txt" />}}
+{{< prism src="https://docs.m2s.uk/docs/fivem/fivemlore/places/phi_short.txt" />}}
 
 Located at Maze bank tower (west) on prosperity.  
 
@@ -29,6 +29,8 @@ High volume of sales with low profits, generating huge amounts of income whilst 
 Location: Morningwood  
 A Premium car dealer specialising in supercars and specialist vehicles.  
 Quite a low volume business with very high profit margins and customer satisfaction. The model here allows us to take special care with each of our customers and make sure they get the best possible service and always leave happy.  
+
+[!](https://docs.m2s.uk/docs/fivem/fivemlore/places/SlaterSupers.png)
 
 ## Slater Autocare  
 
