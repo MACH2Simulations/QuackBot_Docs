@@ -16,7 +16,7 @@ weight = 1
 
 #### Photo  
 
-[!](https://docs.m2s.uk/docs/fivem/fivemlore/people/Slater.jpg)  
+![](https://docs.m2s.uk/docs/fivem/fivemlore/people/Slater.jpg)  
 
 #### History  
 
@@ -42,6 +42,25 @@ With his Nose for interesting things, and role of not a cop, Slater normally can
 
 Upon Returning to (Server 2) Slater began consolidating funds from various black bank accounts and bureaucratic fuckery, Slater was able to retake control of Prometheus heavy industries and purchased the catcafe from the owners that mysteriously found themselves in vats of acid.  
 
+### Drink Of Choice  
+
+Slaters drink of choice, is somewhat egotistically, the "Flaming Slater"  
+
+- One Large Shot of Kraken Rum, Can be substituted for Cherry Kraken or Mount Gay Rum  
+- Cola, One can to about a 60ml (1.6oz) of Rum  
+- One Large Whiskey esc Ice Cube  - this should be enough to be popping its head just above the rum and cola when poured  
+- A Dash of Gunpowder  
+- Opt, Dash of lemon juice  
+
+> Preperation  
+
+- Place Ice Cub in Whiskey glass and slowly pour the Rum over it  
+- Slowly Pour the Cola Over the ice cub and (opt) Add the dash of lemon juice  
+- Carefully place or pour the gun powder onto the top of the ice cube  
+- Once Ready to serve light the gun powder for a nice flash, if you have done this right the rum in the drink should briefly ignite  
+
+This drink is great to start the night off  
+
 ---  
 
 San Andreas Fire Rescue | Chief
@@ -56,5 +75,5 @@ Inspirations
 Slater | Archer  
 Archer | Archer  
 Rico | Madagascar  
-Michal Western | Burn Notice  
+Michael Western | Burn Notice  
 Henry Deacon | Ureka  
