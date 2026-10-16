@@ -18,16 +18,16 @@ weight = 1
 
 ![](https://docs.m2s.uk/docs/fivem/fivemlore/people/Slater.jpg)  
 
+>Theres a bit of hand waving needed with the company ownership for Slater in (Server 2), the long-term plan was Slater still owned the companies, but someone would manage the day to day, it gave me the hand wavey way for me to test new things for the server in character.  
+>The ownership of PHI Allowed the controlled release of explosives and bulk weapons and ammunition, and the ownership of Slaters Supers allowed the control of the super super fast cars and anything special like tanks.  
+>We wanted people to be able to do pretty much anything, but have a leash on the really big stuff  
+
 #### History  
-
-Theres a bit of hand waving needed with the company ownership for Slater in (Server 2), the long-term plan was Slater still owned the companies, but someone would manage the day to day, it gave me the hand wavey way for me to test new things for the server in character.  
-
-The ownership of PHI Allowed the controlled release of explosives and bulk weapons and ammunition, and the ownership of Slaters Supers allowed the control of the super super fast cars and anything special like tanks.  
-We wanted people to be able to do pretty much anything, but have a leash on the really big stuff  
 
 ---  
 
-Slater, Just Slater it’s a mononym like Prince or Cher, not Mr Slater, or Slater Smith as his main passport says, just Slater.
+### Slater, Just Slater it’s a mononym like Prince or Cher, not Mr Slater, or Slater Smith as his main passport says, just Slater  
+
 He is the Pyromaniac fire chief of Los Santos, thriving in Chaos and the heat of, well fire. Slater likes anything that moves fast, goes boom or flies (and preferably all three at once).  
 
 If something is going boom or otherwise on fire, Slater is probably around, either having caused it, to enjoy the view or to clean up the mess afterwards or again maybe all three.

@@ -48,11 +48,10 @@ Current Project; PDSFLR, A System that can be added onto most vehicles to offer 
 
 ## Prometheus Aerospace, Land & Sea Systems – Formally SLDS , SASP, SASE, SHSS  
 
-SLDS | "Slater Land Defense Services | Slater Land Defence Services
-SASP | Slater Aerospace Protection
-SASE | Slater Air & Sea Enterprises
-SHSS | Slater Heavy Ship Systems
-
+SLDS | Slater Land Defense Services  
+SASP | Slater Aerospace Protection  
+SASE | Slater Air & Sea Enterprises  
+SHSS | Slater Heavy Ship Systems  
 
 PALSS Provides armoured vehicles to the SAPD, SAFR, SACG And SAERS;  
 For the SAPD for riot control and armoured transport.  
@@ -65,7 +64,6 @@ Current Project; 335BRM – A High speed heavily armoured vehicle designed to co
 
 PPS Provides protective services to government dignitaries and VIPS.  
 This includes a fleet of armoured vehicles, fast jets and protected heavy aircraft such as our dignitary 747 all of which are licensed to operate in the US.  
-
 
 ## Formally Under RRI  
 
